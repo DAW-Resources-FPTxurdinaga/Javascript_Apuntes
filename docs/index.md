@@ -1,6 +1,6 @@
 # Curso de Vue 3 - Desarrollo de Aplicaciones Web
 
-**Bienvenidos al curso de Vue 3** - El framework progresivo de JavaScript para construir interfaces de usuario modernas y reactivas.
+**Bienvenidos al curso de Javascript** - El framework progresivo de JavaScript para construir interfaces de usuario modernas y reactivas.
 
 ## Objetivos del Curso
 
