@@ -1,4 +1,4 @@
-site_name: CIFP Txurdinaga LHII - DWC - Vue.js 3 
+site_name: CIFP Txurdinaga LHII - DWC - Javascript 
 strict: true
 
 markdown_extensions:
@@ -101,4 +101,4 @@ extra_css:
 
 # Footer personalizado
 extra:
-  copyright: "&copy; 2025 Jose Insausti - CIFP Txurdinaga LHII"
+  copyright: "&copy; 2025 Laura Folgado Galache - CIFP Txurdinaga LHII"
