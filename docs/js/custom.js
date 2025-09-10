@@ -1,5 +1,38 @@
 // Colapsar automáticamente las secciones no activas
 document.addEventListener('DOMContentLoaded', function() {
+  // Función para manejar el estado de los checkboxes
+  function setupExerciseCheckboxes() {
+    // Seleccionar todos los checkboxes de ejercicios en task lists de Material for MkDocs
+    const taskLists = document.querySelectorAll('.md-typeset .task-list-item input[type="checkbox"]');
+    
+    // Cargar el estado guardado de los checkboxes
+    taskLists.forEach((checkbox, index) => {
+      // Usar el texto del ejercicio como identificador único
+      const exerciseText = checkbox.closest('li').textContent.trim().toLowerCase().replace(/\s+/g, '-');
+      const exerciseId = `exercise-${exerciseText}-${index}`;
+      
+      // Guardar el ID en el dataset para referencia
+      checkbox.dataset.exerciseId = exerciseId;
+      
+      // Cargar el estado guardado
+      const savedState = localStorage.getItem(exerciseId);
+      if (savedState === 'completed') {
+        checkbox.checked = true;
+      }
+      
+      // Agregar evento para guardar el estado cuando cambie
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          localStorage.setItem(exerciseId, 'completed');
+        } else {
+          localStorage.removeItem(exerciseId);
+        }
+      });
+    });
+  }
+  
+  // Ejecutar la configuración de checkboxes
+  setupExerciseCheckboxes();
   // Función para colapsar secciones no activas
   function collapseInactiveSections() {
     // Obtener todas las secciones de navegación
