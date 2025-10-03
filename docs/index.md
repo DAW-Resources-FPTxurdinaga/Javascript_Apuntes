@@ -1,100 +1,125 @@
-# Curso de Vue 3 - Desarrollo de Aplicaciones Web
+# JavaScript - Desarrollo de Aplicaciones Web en Entorno Cliente
 
-**Bienvenidos al curso de Vue 3** - El framework progresivo de JavaScript para construir interfaces de usuario modernas y reactivas.
+**👋 ¡Hola! Te doy la bienvenida al curso de JavaScript moderno**: el lenguaje fundamental para crear experiencias dinámicas en la web.
 
-## Objetivos del Curso
+## 🎯 Objetivos del curso
 
-- **Conceptos fundamentales** de Vue 3 y su ecosistema
-- Desarrollo de **componentes reutilizables** y mantenibles
-- **Gestión de estado** con Pinia (el estándar para Vue 3)
-- **Enrutamiento** con Vue Router para SPAs
-- Consumo de **APIs REST/GraphQL**
-- **Buenas prácticas** y patrones de desarrollo profesional
+- **Comprender los fundamentos** de JavaScript moderno (ES2023+)
+- Dominar la **sintaxis moderna** (`let`/`const`, funciones flecha, destructuring…)
+- Desarrollar **funciones, objetos y estructuras de control** con eficacia
+- Aplicar **DOM y eventos** para manipular páginas web dinámicamente
+- Utilizar **APIs web** como `fetch`, `localStorage`, `Geolocation`, etc.
+- Escribir **código limpio, modular y mantenible**
 
-## Nivel del Curso
+## 📚 Nivel del curso
 
-Este material está diseñado para estudiantes de **Desarrollo de Aplicaciones Web** con conocimientos previos en:
+Este material está diseñado para estudiantes de **Desarrollo de Aplicaciones Web**, con conocimientos previos en:
 
 - HTML5 y CSS3
-- JavaScript (ES6+)
-- Conceptos básicos de programación orientada a objetos
-- Experiencia previa con algún framework JS es útil pero no requerida
+- Lógica de programación básica
+- Familiaridad con editores de código (por ejemplo, VS Code)
 
-## Estructura del Curso
+## 🧭 Estructura del curso
 
-### 1. Fundamentos de Vue 3
-- Reactividad y el sistema de instancias
-- Sintaxis de plantillas y directivas básicas
-- Propiedades computadas y watchers
-- Clases y estilos dinámicos
+### 🟠 1. Conceptos básicos
 
-### 2. Componentes y Composición
-- Creación y comunicación entre componentes
-- Props y eventos personalizados
-- Slots y componentes dinámicos
-- Composition API avanzada
+- 1.0 Introducción a JavaScript
+- 1.0.1 Tu primer script en JavaScript
+- 1.1 Características de JavaScript
+- 1.2 Tu primera aplicación
+- 1.3 JavaScript en HTML
+- 1.4 Entradas y salidas en JavaScript
+- 1.5 Variables
+- 1.6 Operadores
+- 1.7 Control de flujo
+  - 1.7.1 Condicionales
+  - 1.7.2 Bucles básicos
+  - 1.7.3 Bucles avanzados
+  - 1.7.4 Break y continue
+- 1.8 Funciones
+  - 1.8.1 Funciones (I): Fundamentos
+  - 1.8.2 Funciones (II): Uso avanzado
+  - 1.8.3 Funciones (III): Parámetros y cierres
+- 📝 1.9 Ejercicio Trivial
 
-### 3. Estado y Gestión de Datos
-- Gestión de estado con Pinia
-- Patrones de gestión de estado
-- Consumo de APIs REST/GraphQL
-- Manejo de errores y carga de datos
 
-### 4. Proyecto Final
-- Estructura de una aplicación Vue 3
-- Enrutamiento avanzado
-- Autenticación y autorización
-- Despliegue y optimización
+### 🟡 2. Uso de los objetos predefinidos del lenguaje JavaScript
 
-## Requisitos Técnicos
+- 2.1. Objetos nativos  
+- 2.2. Objetos del navegador  
+- 2.3. Gestión de temporizadores (`setTimeout`, `setInterval`)
+
+### 🟢 3. Funciones, arrays y objetos definidos por el usuario
+
+- 3.1. Funciones  
+- 3.2. Arrays y métodos fundamentales  
+- 3.3. Objetos definidos por el usuario  
+- 3.4. Módulos ES (`import/export`)
+
+### 🔵 4. Interacción con el usuario, eventos y formularios
+
+- 4.1. Eventos (`click`, `input`, etc.)  
+- 4.2. Validación de formularios  
+- 4.3. Almacenamiento local: `WebStorage`
+
+### 🟣 5. Uso del DOM
+
+- 5.1. Recorrer elementos del DOM  
+- 5.2. Editar elementos del DOM  
+- 5.3. Crear elementos del DOM dinámicamente
+
+### 🟤 6. Trabajo con datos y APIs
+
+- 6.1. Promesas  
+- 6.2. Uso de la API `fetch`
+
+---
+
+## 🛠️ Requisitos técnicos
 
 Para seguir este curso necesitarás:
 
-- Node.js 16+ y npm/yarn
-- Un editor de código (VS Code recomendado)
-- Vue DevTools (extensión del navegador)
-- Conocimientos básicos de línea de comandos
+- Navegador moderno (Chrome, Firefox, Edge, Arc, etc.)
+- Editor de código (VS Code recomendado o forks como Windsurf, Cursor, etc.)
+- Extensión **Live Server** o similar para ver cambios en tiempo real
+- Conocimientos básicos de terminal
 
-## Cómo Empezar
+## 🚀 Cómo empezar
 
-1. Instala [Node.js](https://nodejs.org/) (incluye npm)
-2. Verifica la instalación:
-   ```bash
-   node --version
-   npm --version
-   ```
-3. Crea un proyecto Vue 3 con Vite:
-   ```bash
-   npm create vue@latest mi-proyecto-vue
-   cd mi-proyecto-vue
-   npm install
-   npm run dev
-   ```
+1. Crea una carpeta de proyecto:
+```bash
+mkdir javascript
+cd javascript
+code .
+```
 
-## Recursos Adicionales
+2. Crea los archivos base:
 
-- [Documentación Oficial de Vue 3](https://vuejs.org/)
-- [Vue Mastery (cursos en video)](https://www.vuemastery.com/)
-- [Vue.js en GitHub](https://github.com/vuejs/core)
-- [Comunidad Vue en Discord](https://vue.land/)
-- [Awesome Vue (recursos)](https://github.com/vuejs/awesome-vue)
+    * `index.html`
+   * `main.js`
+   * `style.css`
 
-## Sobre el Curso
+3. Instala la extensión **Live Server** o **Five Server** en VS Code y abre el archivo `index.html` en el navegador para ver los cambios en tiempo real.
 
-Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicaciones Web** con el objetivo de proporcionar una guía completa y práctica para el desarrollo de aplicaciones modernas con Vue 3.
+---
 
-### Metodología
+## 📚 Recursos adicionales
 
-- Aprendizaje basado en proyectos
-- Ejemplos prácticos y código real
-- Ejercicios progresivos
-- Buenas prácticas de la industria
+* [Documentación oficial de JavaScript (MDN)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+* [JavaScript.info (manual completo)](https://javascript.info/)
+* [You Don’t Know JS (serie de libros)](https://github.com/getify/You-Dont-Know-JS)
+* [JavaScript Patterns (por Addy Osmani)](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+* [Eloquent JavaScript (por Marijn Haverbeke)](https://eloquentjavascript.net/)
 
-### Evaluación
+---
 
-- Ejercicios prácticos semanales
-- Proyecto final integrador
-- Participación en foros y actividades
+## ℹ️ Sobre el curso
+
+Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicaciones Web en Entorno Cliente**, con el objetivo de proporcionar una base sólida y moderna sobre el lenguaje JavaScript y sus aplicaciones en el navegador.
+
+**Autora: Laura Folgado Galache**
+
+
 
 ---
 
@@ -123,16 +148,16 @@ Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicacion
 }
 
 .cta-buttons .primary {
-  background-color: #42b983;
-  color: white;
-  border: 2px solid #42b983;
+  background-color: #f7df1e;
+  color: #000;
+  border: 2px solid #f7df1e;
 }
 
 .cta-buttons .primary:hover {
-  background-color: #3aa876;
-  border-color: #3aa876;
+  background-color: #e6cb00;
+  border-color: #e6cb00;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(66, 185, 131, 0.3);
+  box-shadow: 0 4px 12px rgba(247, 223, 30, 0.3);
 }
 
 .cta-buttons .secondary {
@@ -151,7 +176,7 @@ Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicacion
   .cta-buttons {
     flex-direction: column;
   }
-  
+
   .cta-buttons .button {
     width: 100%;
   }
