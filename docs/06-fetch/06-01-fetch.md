@@ -41,9 +41,9 @@ promesa
 ```
 
 !!! info "Relación con fetch()"
-  `fetch()` **devuelve una promesa**.
-  Por eso usamos `.then()` o `async/await` para indicar qué hacer **cuando la respuesta llegue**.
-  Mientras tanto, el código principal sigue funcionando normalmente.
+    `fetch()` **devuelve una promesa**.
+    Por eso usamos `.then()` o `async/await` para indicar qué hacer **cuando la respuesta llegue**.
+    Mientras tanto, el código principal sigue funcionando normalmente.
 
 ---
 
@@ -59,8 +59,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
 ```
 
 !!! note "Importante"
-  `fetch()` no lanza un error si el servidor responde con un código HTTP 404 o 500.
-  Solo lanza error real si **no puede conectarse** (por ejemplo, falta de red).
+    `fetch()` no lanza un error si el servidor responde con un código HTTP 404 o 500.
+    Solo lanza error real si **no puede conectarse** (por ejemplo, falta de red).
 
 ---
 
@@ -100,10 +100,10 @@ cargarUsuarios();
 ---
 
 !!! tip "Ventajas de async/await"
-  - Código más **limpio y legible** que con `.then()` anidados.
-  - Manejo de errores más **estructurado** con `try...catch`.
-  - Permite mezclar código síncrono y asíncrono de forma natural.
-  - Es la **forma recomendada** de trabajar con APIs modernas.
+    - Código más **limpio y legible** que con `.then()` anidados.
+    - Manejo de errores más **estructurado** con `try...catch`.
+    - Permite mezclar código síncrono y asíncrono de forma natural.
+    - Es la **forma recomendada** de trabajar con APIs modernas.
 
 ---
 
@@ -153,8 +153,8 @@ enviarDatos();
 ## 📝 Preguntas de repaso
 
 !!! question "Reflexiona sobre lo aprendido"
-  1. ¿Qué representa una promesa en JavaScript?
-  2. ¿Qué diferencia hay entre los estados `fulfilled` y `rejected`?
-  3. ¿Qué hace `await` dentro de una función `async`?
-  4. ¿Por qué es buena práctica comprobar `respuesta.ok`?
-  5. ¿Cómo puedes enviar datos al servidor con `fetch()`?
+    1. ¿Qué representa una promesa en JavaScript?
+    2. ¿Qué diferencia hay entre los estados `fulfilled` y `rejected`?
+    3. ¿Qué hace `await` dentro de una función `async`?
+    4. ¿Por qué es buena práctica comprobar `respuesta.ok`?
+    5. ¿Cómo puedes enviar datos al servidor con `fetch()`?

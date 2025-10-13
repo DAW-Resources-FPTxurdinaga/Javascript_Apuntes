@@ -2348,10 +2348,10 @@ Si falla (<code>rejected</code>), se ejecuta <code>.catch()</code>.</p>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Relación con fetch()</p>
-</div>
 <p><code>fetch()</code> <strong>devuelve una promesa</strong>.
-  Por eso usamos <code>.then()</code> o <code>async/await</code> para indicar qué hacer <strong>cuando la respuesta llegue</strong>.
-  Mientras tanto, el código principal sigue funcionando normalmente.</p>
+Por eso usamos <code>.then()</code> o <code>async/await</code> para indicar qué hacer <strong>cuando la respuesta llegue</strong>.
+Mientras tanto, el código principal sigue funcionando normalmente.</p>
+</div>
 <hr />
 <h2 id="uso-basico-de-fetch">📌 Uso básico de fetch()</h2>
 <p><code>fetch()</code> se utiliza para <strong>realizar peticiones HTTP</strong> (por ejemplo, obtener datos en formato JSON desde una API).</p>
@@ -2362,9 +2362,9 @@ Si falla (<code>rejected</code>), se ejecuta <code>.catch()</code>.</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Importante</p>
-</div>
 <p><code>fetch()</code> no lanza un error si el servidor responde con un código HTTP 404 o 500.
-  Solo lanza error real si <strong>no puede conectarse</strong> (por ejemplo, falta de red).</p>
+Solo lanza error real si <strong>no puede conectarse</strong> (por ejemplo, falta de red).</p>
+</div>
 <hr />
 <h2 id="version-moderna-con-asyncawait">📌 Versión moderna con async/await</h2>
 <p>La forma más legible de trabajar con <code>fetch()</code> es usando las palabras clave <code>async</code> y <code>await</code>, que permiten escribir código <strong>asíncrono con aspecto secuencial</strong>.</p>
@@ -2398,13 +2398,13 @@ Si falla (<code>rejected</code>), se ejecuta <code>.catch()</code>.</p>
 <hr />
 <div class="admonition tip">
 <p class="admonition-title">Ventajas de async/await</p>
-</div>
 <ul>
 <li>Código más <strong>limpio y legible</strong> que con <code>.then()</code> anidados.</li>
 <li>Manejo de errores más <strong>estructurado</strong> con <code>try...catch</code>.</li>
 <li>Permite mezclar código síncrono y asíncrono de forma natural.</li>
 <li>Es la <strong>forma recomendada</strong> de trabajar con APIs modernas.</li>
 </ul>
+</div>
 <hr />
 <h2 id="envio-de-datos-con-fetch">📌 Envío de datos con fetch()</h2>
 <p>También puedes <strong>enviar información</strong> al servidor (por ejemplo, en formato JSON) usando el método <code>POST</code>.</p>
@@ -2446,7 +2446,6 @@ Si falla (<code>rejected</code>), se ejecuta <code>.catch()</code>.</p>
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
-</div>
 <ol>
 <li>¿Qué representa una promesa en JavaScript?</li>
 <li>¿Qué diferencia hay entre los estados <code>fulfilled</code> y <code>rejected</code>?</li>
@@ -2454,6 +2453,7 @@ Si falla (<code>rejected</code>), se ejecuta <code>.catch()</code>.</p>
 <li>¿Por qué es buena práctica comprobar <code>respuesta.ok</code>?</li>
 <li>¿Cómo puedes enviar datos al servidor con <code>fetch()</code>?</li>
 </ol>
+</div>
 
 
 
