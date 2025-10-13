@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../04-02-01-validacion-html5/">
+      
+      
+        <link rel="next" href="../04-02-03-validacion-avanzada/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>4.2.2 Validación personalizada con JavaScript - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>4.2.2 Validación con Javascript - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4.2.2 Validación personalizada con JavaScript
+              4.2.2 Validación con Javascript
             
           </span>
         </div>
@@ -1612,6 +1616,469 @@
       
   
   
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    4. Eventos, formularios y almacenamiento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. Eventos, formularios y almacenamiento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-01-eventos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.1 Eventos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-02-01-validacion-html5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2.1 Validación con HTML5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4.2.2 Validación con Javascript
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2.2 Validación con Javascript
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#desactivar-la-validacion-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Desactivar la validación automática
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interceptar-el-envio-del-formulario" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Interceptar el envío del formulario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personalizar-mensajes-con-setcustomvalidity" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Personalizar mensajes con setCustomValidity()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-objeto-validity" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 El objeto validity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validar-con-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Validar con pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacion-en-cliente-y-en-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Validación en cliente y en servidor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-02-03-validacion-avanzada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2.3 Validación avanzada
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-02-04-expresiones-regulares/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2.4 Expresiones regulares
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-03-01-webstorage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.3.1 Webstorage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-03-02-indexeddb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.3.2 IndexedDB
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    5. DOM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. DOM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-dom/05-01-acceso-modificacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.1 Acceso y modificación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-dom/05-02-creacion-sustitucion-borrado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.2 Creación, sustitución y borrado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-dom/05-03-navegacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.3 Navegación por elementos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -1634,15 +2101,15 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    4. Eventos, formularios y almacenamiento
+    6. Fetch
     
   </span>
   
@@ -1650,10 +2117,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            4. Eventos, formularios y almacenamiento
+            6. Fetch
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1664,12 +2131,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-01-eventos/" class="md-nav__link">
+      <a href="../../06-fetch/06-01-fetch/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    4.1 Eventos
+    6.1 Fetch
     
   </span>
   
@@ -1714,6 +2181,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#desactivar-la-validacion-automatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Desactivar la validación automática
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#interceptar-el-envio-del-formulario" class="md-nav__link">
     <span class="md-ellipsis">
       📌 Interceptar el envío del formulario
@@ -1723,18 +2199,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mensajes-personalizados-con-setcustomvalidity" class="md-nav__link">
+  <a href="#personalizar-mensajes-con-setcustomvalidity" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Mensajes personalizados con setCustomValidity()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejemplo-confirmar-contrasenas" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Ejemplo: Confirmar contraseñas
+      📌 Personalizar mensajes con setCustomValidity()
     </span>
   </a>
   
@@ -1750,18 +2217,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejemplo-con-pattern" class="md-nav__link">
+  <a href="#validar-con-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Ejemplo con pattern
+      📌 Validar con pattern
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#validar-en-cliente-y-en-servidor" class="md-nav__link">
+  <a href="#validacion-en-cliente-y-en-servidor" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Validar en cliente y en servidor
+      📌 Validación en cliente y en servidor
     </span>
   </a>
   
@@ -1793,14 +2260,28 @@
 
 
 <h1 id="422-validacion-personalizada-con-javascript">4.2.2 Validación personalizada con JavaScript</h1>
-<p>Aunque HTML5 permite validar formularios de forma básica con sus atributos, en muchos casos se necesita <strong>más control</strong>: mostrar mensajes propios, validar condiciones específicas o aplicar estilos personalizados a los campos.</p>
-<p>Para esto utilizamos <strong>JavaScript moderno</strong> junto con la API de validación.</p>
+<p>Aunque HTML5 ofrece una validación automática con atributos como <code>required</code>, <code>minlength</code> o <code>pattern</code>, en muchos casos es necesario tener <strong>más control</strong>: mostrar mensajes personalizados, validar condiciones específicas o definir comportamientos diferentes según el contexto.</p>
+<p>Para eso, JavaScript nos permite acceder y gestionar la <strong>Constraint Validation API</strong>, con la que podemos comprobar, mostrar o anular los errores de validación antes de que el formulario se envíe.</p>
+<hr />
+<h2 id="desactivar-la-validacion-automatica">📌 Desactivar la validación automática</h2>
+<p>Cuando vamos a controlar la validación manualmente desde JavaScript, es recomendable <strong>desactivar los mensajes nativos</strong> del navegador.
+Esto se hace con el atributo <code>novalidate</code> en el formulario.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span> <span class="na">novalidate</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;usuario&quot;</span> <span class="na">required</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Usuario&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Enviar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">¿Por qué usar <code>novalidate</code>?</p>
+<p>Si no se usa <code>novalidate</code>, el navegador mostrará sus propios mensajes (“Rellene este campo”, “Introduzca un email válido…”) al mismo tiempo que los tuyos.
+Esto puede resultar confuso para el usuario.</p>
+</div>
 <hr />
 <h2 id="interceptar-el-envio-del-formulario">📌 Interceptar el envío del formulario</h2>
-<p>Podemos usar el evento <code>submit</code> para <strong>detener el envío</strong> si los datos no son correctos.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;usuario&quot;</span> <span class="na">required</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Nombre de usuario&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clave&quot;</span> <span class="na">required</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;6&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Contraseña&quot;</span><span class="p">&gt;</span>
+<p>El evento <code>submit</code> permite <strong>comprobar la validez de todos los campos</strong> antes de enviar el formulario.
+Si algún campo no cumple las condiciones, se puede <strong>bloquear el envío</strong> con <code>preventDefault()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span> <span class="na">novalidate</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;correo&quot;</span> <span class="na">required</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Correo electrónico&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Registrar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 
@@ -1810,126 +2291,131 @@
 <span class="w">  </span><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">form</span><span class="p">.</span><span class="nx">checkValidity</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span><span class="w"> </span><span class="c1">// Bloquea el envío si hay errores</span>
-<span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Por favor, revisa los campos antes de enviar.&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">form</span><span class="p">.</span><span class="nx">reportValidity</span><span class="p">();</span><span class="w"> </span><span class="c1">// Muestra los mensajes del navegador</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">});</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Diferencia entre <code>checkValidity()</code> y <code>reportValidity()</code></p>
+<ul>
+<li><code>checkValidity()</code> → devuelve <code>true</code> o <code>false</code>, pero <strong>no muestra mensajes</strong>.</li>
+<li><code>reportValidity()</code> → hace lo mismo, pero <strong>muestra los mensajes nativos</strong> de los campos no válidos.</li>
+</ul>
+</div>
 <hr />
-<h2 id="mensajes-personalizados-con-setcustomvalidity">📌 Mensajes personalizados con setCustomValidity()</h2>
-<p>Podemos <strong>reemplazar</strong> los mensajes genéricos del navegador.</p>
+<h2 id="personalizar-mensajes-con-setcustomvalidity">📌 Personalizar mensajes con <code>setCustomValidity()</code></h2>
+<p>Podemos sobrescribir los mensajes del navegador y mostrar los nuestros con <code>setCustomValidity()</code>.</p>
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clave&quot;</span> <span class="na">required</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;6&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Contraseña&quot;</span><span class="p">&gt;</span>
 
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">clave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;clave&quot;</span><span class="p">);</span>
 
 <span class="w">  </span><span class="nx">clave</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">clave</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Siempre limpiamos el mensaje antes de volver a comprobar</span>
+<span class="w">    </span><span class="nx">clave</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">clave</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">tooShort</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">      </span><span class="nx">clave</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;La contraseña debe tener al menos 6 caracteres&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">clave</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Limpia el error</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">});</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
-<hr />
-<h2 id="ejemplo-confirmar-contrasenas">📌 Ejemplo: Confirmar contraseñas</h2>
-<p>Un caso muy común es validar que <strong>dos contraseñas coinciden</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clave1&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Contraseña&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clave2&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Repite la contraseña&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Registrar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">clave1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;clave1&quot;</span><span class="p">);</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">clave2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;clave2&quot;</span><span class="p">);</span>
-
-<span class="w">  </span><span class="nx">clave2</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">clave1</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nx">clave2</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">clave2</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;Las contraseñas no coinciden&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">clave2</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-<hr />
-<h2 id="el-objeto-validity">📌 El objeto validity</h2>
-<p>Cada campo de formulario tiene la propiedad <code>.validity</code>, que devuelve un objeto con <strong>banderas booleanas</strong> que indican por qué un campo no es válido.</p>
-<p>Las más comunes son:</p>
-<ul>
-<li><code>valueMissing</code>: el campo está vacío y es obligatorio.</li>
-<li><code>typeMismatch</code>: el valor no coincide con el tipo (<code>email</code>, <code>url</code>, etc.).</li>
-<li><code>tooShort</code> o <code>tooLong</code>: el valor no cumple con la longitud mínima o máxima.</li>
-<li><code>patternMismatch</code>: el valor no coincide con el patrón definido en <code>pattern</code>.</li>
-<li><code>valid</code>: es <code>true</code> si el campo cumple todas las condiciones.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;correo&quot;</span> <span class="na">required</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Introduce tu email&quot;</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">correo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;correo&quot;</span><span class="p">);</span>
-
-<span class="w">  </span><span class="nx">correo</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">correo</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">valueMissing</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;El correo es obligatorio&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">correo</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">typeMismatch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;Por favor, introduce un email válido&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-<hr />
-<h2 id="ejemplo-con-pattern">📌 Ejemplo con pattern</h2>
-<p>Con el atributo <code>pattern</code> podemos definir <strong>expresiones regulares</strong> para validar un formato específico.
-Por ejemplo, supongamos que queremos que el <strong>usuario solo contenga letras y números</strong> (sin espacios ni caracteres especiales).</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">input</span> 
-    <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> 
-    <span class="na">id</span><span class="o">=</span><span class="s">&quot;usuario&quot;</span> 
-    <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[A-Za-z0-9]+&quot;</span> 
-    <span class="na">required</span> 
-    <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Nombre de usuario (solo letras y números)&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Registrar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">usuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">);</span>
-
-<span class="w">  </span><span class="nx">usuario</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">usuario</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">patternMismatch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">usuario</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;El nombre solo puede contener letras y números, sin espacios&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">usuario</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-<hr />
-<h2 id="validar-en-cliente-y-en-servidor">📌 Validar en cliente y en servidor</h2>
-<div class="admonition warning">
-<p class="admonition-title">No basta con validar en el cliente</p>
-<p>La validación con JavaScript es útil para mejorar la <strong>experiencia del usuario</strong>: evita envíos innecesarios, muestra mensajes inmediatos y guía al usuario a rellenar bien los campos.
-Sin embargo, <strong>no es suficiente</strong>.
-Un usuario avanzado puede desactivar JavaScript o manipular los datos antes de enviarlos.</p>
-<p>Por eso, siempre se recomienda:</p>
-<ol>
-<li><strong>Validación en el cliente</strong> → rápida, amigable y visual.</li>
-<li><strong>Validación en el servidor</strong> → obligatoria, garantiza que los datos que llegan cumplen con las reglas de seguridad y formato.</li>
-</ol>
+<div class="admonition note">
+<p class="admonition-title">Consejo práctico</p>
+<p>Siempre que uses <code>setCustomValidity()</code>, recuerda <strong>limpiar el mensaje anterior</strong> con <code>setCustomValidity("")</code>.
+Si no lo haces, el campo seguirá marcado como inválido incluso después de corregir el error.</p>
 </div>
+<hr />
+<h2 id="el-objeto-validity">📌 El objeto <code>validity</code></h2>
+<p>Cada campo del formulario incluye la propiedad <code>.validity</code>, un objeto con <strong>indicadores booleanos</strong> que describen por qué el campo no es válido.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;correo&quot;</span> <span class="na">required</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Introduce tu email&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">correo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;correo&quot;</span><span class="p">);</span>
+
+<span class="nx">correo</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">correo</span><span class="p">.</span><span class="nx">validity</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Este objeto contiene propiedades como:</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>valueMissing</code></td>
+<td>El campo está vacío y es obligatorio</td>
+</tr>
+<tr>
+<td><code>typeMismatch</code></td>
+<td>El valor no coincide con el tipo (<code>email</code>, <code>url</code>, etc.)</td>
+</tr>
+<tr>
+<td><code>tooShort</code> / <code>tooLong</code></td>
+<td>No cumple con la longitud establecida</td>
+</tr>
+<tr>
+<td><code>patternMismatch</code></td>
+<td>No coincide con el patrón definido</td>
+</tr>
+<tr>
+<td><code>valid</code></td>
+<td>Es <code>true</code> si el campo cumple todas las condiciones</td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplo simple de uso:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">correo</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">valueMissing</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;El correo es obligatorio&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">correo</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">typeMismatch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;Por favor, introduce un email válido&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">correo</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="validar-con-pattern">📌 Validar con <code>pattern</code></h2>
+<p>El atributo <code>pattern</code> permite definir <strong>expresiones regulares</strong> para establecer formatos personalizados.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> 
+  <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> 
+  <span class="na">id</span><span class="o">=</span><span class="s">&quot;usuario&quot;</span> 
+  <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[A-Za-z0-9]+&quot;</span> 
+  <span class="na">required</span> 
+  <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Solo letras y números&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">usuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">);</span>
+
+<span class="nx">usuario</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">usuario</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Limpia el error previo</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">usuario</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">patternMismatch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">usuario</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;Solo se permiten letras y números, sin espacios&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<hr />
+<h2 id="validacion-en-cliente-y-en-servidor">📌 Validación en cliente y en servidor</h2>
+<p>La validación en el cliente (HTML5 + JavaScript) mejora la <strong>experiencia del usuario</strong>, pero <strong>no garantiza la seguridad</strong>.
+Cualquier persona podría manipular los datos antes de enviarlos al servidor.</p>
+<p>Por eso, toda aplicación debe tener:</p>
+<ol>
+<li><strong>Validación en el cliente</strong> → rápida, visual y preventiva.  </li>
+<li><strong>Validación en el servidor</strong> → obligatoria y definitiva, para proteger los datos y evitar ataques.</li>
+</ol>
 <hr />
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué evento se utiliza para detener el envío de un formulario?</li>
-<li>¿Qué método sirve para mostrar un mensaje de error personalizado en un campo?</li>
-<li>¿Cómo puedes comprobar con JavaScript si un email tiene un formato válido?</li>
-<li>¿Qué atributo HTML5 se usa para validar un formato con expresiones regulares?</li>
-<li>¿Por qué es necesario validar también en el servidor?</li>
+<li>¿Qué atributo HTML evita que el navegador muestre sus propios mensajes de error?</li>
+<li>¿Qué diferencia hay entre <code>checkValidity()</code> y <code>reportValidity()</code>?</li>
+<li>¿Qué método permite establecer un mensaje personalizado de error?</li>
+<li>¿Qué sucede si no limpias el mensaje de <code>setCustomValidity()</code> después de corregir el error?</li>
+<li>¿Por qué es importante validar también los datos en el servidor?</li>
 </ol>
 </div>
 

@@ -1,9 +1,9 @@
 # 4.2.1 Validación con HTML5
 
-HTML5 incorpora una serie de atributos que permiten validar formularios **sin necesidad de escribir JavaScript**.
-Estos atributos aseguran que los datos introducidos cumplen unos requisitos mínimos antes de enviar el formulario.
+HTML5 incorpora una serie de **atributos nativos** que permiten validar formularios **sin necesidad de programar en JavaScript**.
+Estos atributos ayudan a garantizar que los datos introducidos por el usuario cumplen unos **requisitos mínimos** antes de que el formulario se envíe.
 
-La validación con HTML5 es **rápida y sencilla**, pero se puede complementar con JavaScript para personalizar los mensajes y el comportamiento.
+La validación con HTML5 es **rápida, accesible y automática**, pero también **limitada**: si se necesitan mensajes o comportamientos personalizados, se puede complementar con JavaScript (lo veremos en la siguiente lección).
 
 ---
 
@@ -11,87 +11,79 @@ La validación con HTML5 es **rápida y sencilla**, pero se puede complementar c
 
 ### required
 
-Obliga a que el campo no esté vacío.
+Obliga a que el campo no esté vacío antes de enviar el formulario.
 
 ```html
 <input type="text" required placeholder="Nombre">
 ```
 
+---
+
 ### type
 
-Define el tipo de dato esperado (`email`, `number`, `url`, `date`, etc.).
-El navegador comprobará automáticamente que el formato sea correcto.
+Define el tipo de dato que se espera (`email`, `number`, `url`, `date`, etc.).
+El navegador comprueba automáticamente que el formato sea correcto.
 
 ```html
 <input type="email" required placeholder="Correo electrónico">
 ```
 
+---
+
 ### min y max
 
-Restringen un rango de valores (para `number`, `date`, etc.).
+Restringen el rango de valores numéricos o de fechas permitidos.
 
 ```html
 <input type="number" min="18" max="99" required>
 ```
 
+---
+
 ### minlength y maxlength
 
-Definen la longitud mínima y máxima de texto.
+Definen la longitud mínima y máxima de los caracteres que puede contener un campo de texto.
 
 ```html
 <input type="password" minlength="6" maxlength="12" required>
 ```
 
+---
+
 ### pattern
 
-Permite usar una **expresión regular** para validar el contenido.
+Permite aplicar **expresiones regulares (RegExp)** para validar el formato del texto.
+Por ejemplo, el siguiente campo solo acepta letras sin acentos ni espacios:
 
 ```html
 <input type="text" pattern="[A-Za-z]+" title="Solo letras permitidas">
 ```
 
----
-
-## 📌 API de validación de formularios
-
-Además de los atributos, HTML5 incluye métodos que permiten interactuar con el formulario desde JavaScript:
-
-### checkValidity()
-
-Devuelve `true` si todos los campos cumplen las reglas de validación.
-
-```html
-<form id="miFormulario">
-  <input type="email" required>
-  <button type="submit">Enviar</button>
-</form>
-
-<script>
-  const form = document.getElementById("miFormulario");
-  console.log(form.checkValidity()); // true o false
-</script>
-```
-
-### reportValidity()
-
-Muestra los mensajes de error nativos del navegador si hay campos inválidos.
-
-```js
-form.reportValidity(); // Muestra un mensaje si algún campo es incorrecto
-```
+!!! note "Consejo"
+    El atributo `title` es muy útil cuando se usa `pattern`, ya que el mensaje que muestra el navegador tomará el texto del `title` como pista para el usuario.
 
 ---
 
-!!! note "Mensajes del navegador"
-    Los navegadores modernos muestran mensajes automáticos en el idioma configurado del sistema (por ejemplo, *“Rellene este campo”*).
-    Estos mensajes no siempre se pueden personalizar con HTML5, por eso a menudo se complementan con JavaScript.
+## 📌 Validación automática en los navegadores
+
+Cuando el usuario intenta enviar un formulario con algún campo que no cumple las reglas establecidas, el navegador muestra un mensaje como:
+
+> “Rellene este campo.”
+> “Introduzca una dirección de correo electrónico válida.”
+
+Estos mensajes se generan **automáticamente** según el idioma del navegador.
+
+!!! info "Importante"
+    - Los mensajes automáticos **no se pueden personalizar completamente**.
+    - Para mostrar textos o estilos propios (por ejemplo, debajo del campo), será necesario complementarlo con **validación en JavaScript**, que veremos más adelante.
+    - Las validaciones de HTML5 son útiles para una primera capa de control, pero **no sustituyen la validación en el servidor**, que siempre debe realizarse por motivos de seguridad.
 
 ---
 
 ## 📝 Preguntas de repaso
 
 !!! question "Reflexiona sobre lo aprendido"
-    1. ¿Qué atributo utilizarías para que un campo de texto sea obligatorio?
-    2. ¿Cómo puedes limitar un campo `number` para que solo acepte valores entre 1 y 10?
-    3. ¿Qué diferencia hay entre `checkValidity()` y `reportValidity()`?
-    4. ¿Cómo podrías validar que un campo solo acepte letras usando HTML5?
+    1. ¿Qué atributo hace que un campo sea obligatorio?
+    2. ¿Cómo puedes limitar un número entre 1 y 10 sin usar JavaScript?
+    3. ¿Qué atributo permite validar un formato de texto mediante expresiones regulares?
+    4. ¿Por qué es recomendable usar también validación en el servidor?

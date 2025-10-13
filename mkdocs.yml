@@ -1,4 +1,4 @@
-site_name: CIFP Txurdinaga LHII - DWC - Vue.js 3 
+site_name: CIFP Txurdinaga LHII - DWC - Javascript 
 strict: true
 
 markdown_extensions:
@@ -7,44 +7,105 @@ markdown_extensions:
   - pymdownx.escapeall:
       hardbreak: true
       nbsp: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist
 
 
 # Estructura de navegación
 nav:
   - Inicio: index.md
   - '1. Conceptos Básicos':
-    - '1.1 Introducción a Vue': 'conceptos-basicos/introduccion.md'
-    - '1.2 Tu primera aplicación': 'conceptos-basicos/primer-ejemplo.md'
-  - '2. Fundamentos':
-    - '2.1 Interpolación y Directivas': 'fundamentos/interpolacion.md'
-    - '2.2 V-bind y V-model': 'fundamentos/vbind-vmodel.md'
-    - '2.3 V-if y V-for': 'fundamentos/condicionales-bucles.md'
-    - '2.4 Propiedades Computadas': 'fundamentos/propiedades-computadas.md'
-    - '2.5 Manejo de Eventos': 'fundamentos/eventos.md'
-    - '2.6 Ciclo de Vida de la Instancia': 'fundamentos/ciclo-vida.md'
-    - '2.7 Ejercicio Práctico': 'fundamentos/ejercicio-practico.md'
-    - '2.8 Hoja de Referencia Rápida': 'fundamentos/cheat-sheet.md'
-  - '3. Componentes':
-    - '3.1 Creación y Uso': 'componentes/creacion.md'
-    - '3.2 Comunicación entre componentes': 'componentes/comunicacion.md'
-  - '4. Peticiones HTTP':
-    - '4.1 Introducción': 'http/introduccion.md'
-    - '4.2 Uso de la API Fetch': 'http/fetch.md'
-    - '4.3 Uso de Axios': 'http/axios.md'
-    - '4.4 Uso de Alova': 'http/alova.md'
-    - '4.5 Ejercicios Prácticos': 'http/ejercicios.md'
-  - '5. Enrutamiento con Vue Router':
-    - '5.1 Introducción': 'routing/introduccion.md'
-    - '5.2 Rutas Básicas': 'routing/rutas-basicas.md'
-    - '5.3 Navegación Avanzada': 'routing/navegacion-avanzada.md'
-    - '5.4 Ejercicio Práctico': 'routing/ejercicio-practico.md'
-  - '6. Gestión de Estado con Pinia':
-    - '6.1 Introducción a Pinia': 'pinia/introduccion.md'
-    - '6.2 Stores en Pinia': 'pinia/stores.md'
-    - '6.3 Conceptos Avanzados': 'pinia/avanzado.md'
-  - '7. Proyecto Práctico':
-    - '7.1 Estructura del proyecto': 'proyecto/estructura.md'
-    - '7.2 Ejercicios guiados': 'proyecto/ejercicios.md'
+    - '1.0 Introducción a Javascript': '01-conceptos-basicos/01-00-introduccion.md'
+    - '1.0.1 Tu primer script en JavaScript': '01-conceptos-basicos/01-00-01-primer-ejemplo.md'
+    - '1.1 JavaScript en HTML': '01-conceptos-basicos/01-01-javascript-en-html.md'
+    - '1.2 Entradas y salidas en Javascript': '01-conceptos-basicos/01-02-entradas-salidas.md'
+    - '1.3 Variables': '01-conceptos-basicos/01-03-variables.md'
+    - '1.4 Operadores': '01-conceptos-basicos/01-04-operadores.md'
+    - '1.5 Control de flujo':
+      - '1.5.1 Condicionales': '01-conceptos-basicos/01-05-01-condicionales.md'
+      - '1.5.2 Bucles básicos': '01-conceptos-basicos/01-05-02-bucles-basicos.md'
+      - '1.5.3 Bucles avanzados': '01-conceptos-basicos/01-05-03-bucles-avanzados.md'
+      - '1.5.4 Break y continue': '01-conceptos-basicos/01-05-04-break-continue.md'
+    - '📝 1.6 Ejercicio Trivial': '01-conceptos-basicos/01-06-ejercicio-trivial.md'
+  - '2. Objetos predefinidos del usuario':
+    - 'Objetos nativos':
+      - '2.1 String': '02-objetos-predefinidos/02-01-string.md'
+      - '2.2 Number': '02-objetos-predefinidos/02-02-number.md'
+      - '2.3 Math': '02-objetos-predefinidos/02-03-math.md'
+      - '2.4 Date': '02-objetos-predefinidos/02-04-date.md'
+      - '2.5 Boolean': '02-objetos-predefinidos/02-05-boolean.md'
+      - '2.6 Set': '02-objetos-predefinidos/02-06-set.md'
+      - '2.7 Map': '02-objetos-predefinidos/02-07-map.md'
+      - '2.8 Symbol': '02-objetos-predefinidos/02-08-symbol.md'
+    - 'Objetos del navegador':
+      - '2.9 Window': '02-objetos-predefinidos/02-09-window.md'
+      - '2.10 Document': '02-objetos-predefinidos/02-10-document.md'
+      - '2.11 Navigator': '02-objetos-predefinidos/02-11-navigator.md'
+      - '2.12 Screen': '02-objetos-predefinidos/02-12-screen.md'
+      - '2.13 Location': '02-objetos-predefinidos/02-13-location.md'
+      - '2.14 History': '02-objetos-predefinidos/02-14-history.md'
+      - '2.15 Control de tiempo': '02-objetos-predefinidos/02-15-control-tiempo.md'
+  - '3. Funciones, Arrays y Objetos definidos por el usuario:':
+    - 'Funciones':
+      - '3.1.1 Funciones (I): Fundamentos': '03-funciones-arrays-objetos/03-01-01-funciones-1.md'
+      - '3.1.2 Funciones (II): Uso avanzado': '03-funciones-arrays-objetos/03-01-02-funciones-2.md'
+      - '3.1.3 Funciones (III): Parámetros y Closures': '03-funciones-arrays-objetos/03-01-03-funciones-3.md'
+    - 'Arrays':
+      - '3.2.1 Arrays (I): Fundamentos': '03-funciones-arrays-objetos/03-02-01-arrays-fundamentos.md'
+      - '3.2.2 Arrays (II): Interación y transformación': '03-funciones-arrays-objetos/03-02-02-arrays-iteracion-transformacion.md'
+      - '3.2.3 Arrays (III): Búsqueda y ordenación': '03-funciones-arrays-objetos/03-02-03-arrays-busqueda-ordenacion.md'
+      - '3.2.4 Arrays (IV): Manipulación avanzada y buenas prácticas': '03-funciones-arrays-objetos/03-02-04-arrays-avanzada.md'
+    - 'Clases':
+      - '3.3.1 Clases (I): Clases y objetos. Fundamentos': '03-funciones-arrays-objetos/03-03-01-clases-1.md'
+      - '3.3.2 Clases (II): Clases y objetos. Herencia y encapsulación': '03-funciones-arrays-objetos/03-03-02-clases-2.md'
+
+  - '4. Eventos, formularios y almacenamiento':
+    - '4.1 Eventos': '04-eventos-formularios-almacenamiento/04-01-eventos.md'
+    - '4.2.1 Validación con HTML5': '04-eventos-formularios-almacenamiento/04-02-01-validacion-html5.md'
+    - '4.2.2 Validación con Javascript': '04-eventos-formularios-almacenamiento/04-02-02-validacion-javascript.md'
+    - '4.2.3 Validación avanzada': '04-eventos-formularios-almacenamiento/04-02-03-validacion-avanzada.md'
+    - '4.2.4 Expresiones regulares': '04-eventos-formularios-almacenamiento/04-02-04-expresiones-regulares.md'
+    - '4.3.1 Webstorage': '04-eventos-formularios-almacenamiento/04-03-01-webstorage.md'
+    - '4.3.2 IndexedDB': '04-eventos-formularios-almacenamiento/04-03-02-indexeddb.md'
+  - '5. DOM':
+    - '5.1 Acceso y modificación': '05-dom/05-01-acceso-modificacion.md'
+    - '5.2 Creación, sustitución y borrado': '05-dom/05-02-creacion-sustitucion-borrado.md'
+    - '5.3 Navegación por elementos': '05-dom/05-03-navegacion.md'
+  - '6. Fetch':
+    - '6.1 Fetch': '06-fetch/06-01-fetch.md'
+
+
+ # - '2. Fundamentos':
+    # - '2.1 Interpolación y Directivas': 'fundamentos/interpolacion.md'
+    # - '2.2 V-bind y V-model': 'fundamentos/vbind-vmodel.md'
+    # - '2.3 V-if y V-for': 'fundamentos/condicionales-bucles.md'
+    # - '2.4 Propiedades Computadas': 'fundamentos/propiedades-computadas.md'
+    # - '2.5 Manejo de Eventos': 'fundamentos/eventos.md'
+    # - '2.6 Ciclo de Vida de la Instancia': 'fundamentos/ciclo-vida.md'
+ #    - '2.7 Ejercicio Práctico': 'fundamentos/ejercicio-practico.md'
+ #   - '2.8 Hoja de Referencia Rápida': 'fundamentos/cheat-sheet.md'
+ # - '3. Componentes':
+ #   - '3.1 Creación y Uso': 'componentes/creacion.md'
+ #   - '3.2 Comunicación entre componentes': 'componentes/comunicacion.md'
+ # - '4. Peticiones HTTP':
+ #   - '4.1 Introducción': 'http/introduccion.md'
+ #   - '4.2 Uso de la API Fetch': 'http/fetch.md'
+ #   - '4.3 Uso de Axios': 'http/axios.md'
+ #   - '4.4 Uso de Alova': 'http/alova.md'
+ #   - '4.5 Ejercicios Prácticos': 'http/ejercicios.md'
+ # - '5. Enrutamiento con Vue Router':
+ #   - '5.1 Introducción': 'routing/introduccion.md'
+ #   - '5.2 Rutas Básicas': 'routing/rutas-basicas.md'
+ #   - '5.3 Navegación Avanzada': 'routing/navegacion-avanzada.md'
+ #   - '5.4 Ejercicio Práctico': 'routing/ejercicio-practico.md'
+ # - '6. Gestión de Estado con Pinia':
+ #   - '6.1 Introducción a Pinia': 'pinia/introduccion.md'
+ #   - '6.2 Stores en Pinia': 'pinia/stores.md'
+ #   - '6.3 Conceptos Avanzados': 'pinia/avanzado.md'
+ # - '7. Proyecto Práctico':
+ #   - '7.1 Estructura del proyecto': 'proyecto/estructura.md'
+ #   - '7.2 Ejercicios guiados': 'proyecto/ejercicios.md'
 
 # Configuración del tema
 theme:
@@ -98,7 +159,8 @@ use_directory_urls: true
 extra_css:
   - https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap
   - custom3.css
+  - extra.css
 
 # Footer personalizado
 extra:
-  copyright: "&copy; 2025 Jose Insausti - CIFP Txurdinaga LHII"
+  copyright: "&copy; 2025 Laura Folgado Galache - CIFP Txurdinaga LHII"
