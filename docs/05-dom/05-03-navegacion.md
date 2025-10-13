@@ -18,8 +18,8 @@ Los más comunes son:
 | `comment`  | Representa los comentarios `<!-- ... -->`            |
 
 !!! info "DOM jerárquico"
-  Piensa en el DOM como un **árbol genealógico**:
-  cada nodo tiene un **padre**, puede tener **hijos** y puede tener **hermanos** (otros nodos al mismo nivel).
+    Piensa en el DOM como un **árbol genealógico**:
+    cada nodo tiene un **padre**, puede tener **hijos** y puede tener **hermanos** (otros nodos al mismo nivel).
 
 ---
 
@@ -38,8 +38,8 @@ console.log(lista.lastElementChild);  // Último hijo
 ```
 
 !!! note "children vs childNodes"
-  - `children` devuelve **solo elementos HTML**.
-  - `childNodes` incluye **también nodos de texto y comentarios** (por ejemplo, saltos de línea).
+    - `children` devuelve **solo elementos HTML**.
+    - `childNodes` incluye **también nodos de texto y comentarios** (por ejemplo, saltos de línea).
 
 ### Padre
 
@@ -65,8 +65,8 @@ console.log(item.nextElementSibling);     // Hermano siguiente
 ```
 
 !!! note "Element vs Node"
-  Los métodos con `Element` (por ejemplo, `nextElementSibling`) **ignoran los saltos de línea y los espacios**.
-  Los métodos sin “Element” (`nextSibling`, `previousSibling`) pueden devolver **nodos de texto**.
+    Los métodos con `Element` (por ejemplo, `nextElementSibling`) **ignoran los saltos de línea y los espacios**.
+    Los métodos sin “Element” (`nextSibling`, `previousSibling`) pueden devolver **nodos de texto**.
 
 ---
 
@@ -123,8 +123,8 @@ console.log(seccionPadre); // Muestra el <section> más cercano que contiene el 
 ```
 
 !!! info "Uso de closest()"
-  Muy útil en formularios o listas cuando un evento ocurre en un elemento hijo
-  (por ejemplo, un botón dentro de una tarjeta) y necesitamos acceder a su contenedor.
+    Muy útil en formularios o listas cuando un evento ocurre en un elemento hijo
+    (por ejemplo, un botón dentro de una tarjeta) y necesitamos acceder a su contenedor.
 
 ---
 
@@ -141,16 +141,16 @@ items.forEach((el, i) => {
 ```
 
 !!! note "HTMLCollection vs NodeList"
-  - `HTMLCollection` (por ejemplo, devuelta por `children`) **se actualiza automáticamente** si el DOM cambia.
-  - `NodeList` (por ejemplo, de `querySelectorAll`) **es estática**: no refleja cambios posteriores.
+    - `HTMLCollection` (por ejemplo, devuelta por `children`) **se actualiza automáticamente** si el DOM cambia.
+    - `NodeList` (por ejemplo, de `querySelectorAll`) **es estática**: no refleja cambios posteriores.
 
 ---
 
 ## 📝 Preguntas de repaso
 
 !!! question "Reflexiona sobre lo aprendido"
-    1. ¿Qué diferencia hay entre `children` y `childNodes`?
-    2. ¿Qué devuelve `parentElement` y para qué sirve?
-    3. ¿Cómo podrías acceder al hermano siguiente de un elemento?
-    4. ¿Qué hace el método `.closest()`?
-    5. ¿Qué diferencia hay entre una `NodeList` y una `HTMLCollection`?
+      1. ¿Qué diferencia hay entre `children` y `childNodes`?
+      2. ¿Qué devuelve `parentElement` y para qué sirve?
+      3. ¿Cómo podrías acceder al hermano siguiente de un elemento?
+      4. ¿Qué hace el método `.closest()`?
+      5. ¿Qué diferencia hay entre una `NodeList` y una `HTMLCollection`?
