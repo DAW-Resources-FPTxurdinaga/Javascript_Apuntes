@@ -2390,9 +2390,9 @@ JavaScript nos permite movernos entre esos nodos como si fueran miembros de una 
 </table>
 <div class="admonition info">
 <p class="admonition-title">DOM jerárquico</p>
-</div>
 <p>Piensa en el DOM como un <strong>árbol genealógico</strong>:
-  cada nodo tiene un <strong>padre</strong>, puede tener <strong>hijos</strong> y puede tener <strong>hermanos</strong> (otros nodos al mismo nivel).</p>
+cada nodo tiene un <strong>padre</strong>, puede tener <strong>hijos</strong> y puede tener <strong>hermanos</strong> (otros nodos al mismo nivel).</p>
+</div>
 <hr />
 <h2 id="acceso-a-nodos-hijos-y-padres">📌 Acceso a nodos hijos y padres</h2>
 <h3 id="hijos">Hijos</h3>
@@ -2405,11 +2405,11 @@ JavaScript nos permite movernos entre esos nodos como si fueran miembros de una 
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">children vs childNodes</p>
-</div>
 <ul>
 <li><code>children</code> devuelve <strong>solo elementos HTML</strong>.</li>
 <li><code>childNodes</code> incluye <strong>también nodos de texto y comentarios</strong> (por ejemplo, saltos de línea).</li>
 </ul>
+</div>
 <h3 id="padre">Padre</h3>
 <p>Para acceder al elemento padre:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">);</span>
@@ -2426,9 +2426,9 @@ Podemos desplazarnos entre ellos con las siguientes propiedades:</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Element vs Node</p>
-</div>
 <p>Los métodos con <code>Element</code> (por ejemplo, <code>nextElementSibling</code>) <strong>ignoran los saltos de línea y los espacios</strong>.
-  Los métodos sin “Element” (<code>nextSibling</code>, <code>previousSibling</code>) pueden devolver <strong>nodos de texto</strong>.</p>
+Los métodos sin “Element” (<code>nextSibling</code>, <code>previousSibling</code>) pueden devolver <strong>nodos de texto</strong>.</p>
+</div>
 <hr />
 <h2 id="busqueda-dentro-de-un-elemento-especifico">📌 Búsqueda dentro de un elemento específico</h2>
 <p>Podemos usar <code>querySelector()</code> o <code>querySelectorAll()</code> no solo en <code>document</code>, sino <strong>dentro de cualquier elemento</strong>.</p>
@@ -2494,9 +2494,9 @@ Podemos desplazarnos entre ellos con las siguientes propiedades:</p>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Uso de closest()</p>
-</div>
 <p>Muy útil en formularios o listas cuando un evento ocurre en un elemento hijo
-  (por ejemplo, un botón dentro de una tarjeta) y necesitamos acceder a su contenedor.</p>
+(por ejemplo, un botón dentro de una tarjeta) y necesitamos acceder a su contenedor.</p>
+</div>
 <hr />
 <h2 id="iterar-sobre-colecciones-de-nodos">📌 Iterar sobre colecciones de nodos</h2>
 <p>Los métodos como <code>querySelectorAll()</code> devuelven una <strong>NodeList</strong>, que puede recorrerse con <code>forEach</code>.</p>
@@ -2508,11 +2508,11 @@ Podemos desplazarnos entre ellos con las siguientes propiedades:</p>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">HTMLCollection vs NodeList</p>
-</div>
 <ul>
 <li><code>HTMLCollection</code> (por ejemplo, devuelta por <code>children</code>) <strong>se actualiza automáticamente</strong> si el DOM cambia.</li>
 <li><code>NodeList</code> (por ejemplo, de <code>querySelectorAll</code>) <strong>es estática</strong>: no refleja cambios posteriores.</li>
 </ul>
+</div>
 <hr />
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
