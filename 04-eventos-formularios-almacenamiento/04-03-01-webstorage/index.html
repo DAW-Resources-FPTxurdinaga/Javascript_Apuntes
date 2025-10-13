@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../01-03-variables/">
+        <link rel="prev" href="../04-02-04-expresiones-regulares/">
       
       
-        <link rel="next" href="../01-05-01-condicionales/">
+        <link rel="next" href="../04-03-02-indexeddb/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1.4 Operadores - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>4.3.1 Webstorage - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-operadores-en-javascript" class="md-skip">
+        <a href="#43-almacenamiento-en-el-navegador-web-storage" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4 Operadores
+              4.3.1 Webstorage
             
           </span>
         </div>
@@ -255,10 +255,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +285,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -307,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. Conceptos Básicos
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-introduccion/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-introduccion/" class="md-nav__link">
         
   
   
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-01-primer-ejemplo/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-01-primer-ejemplo/" class="md-nav__link">
         
   
   
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01-javascript-en-html/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-01-javascript-en-html/" class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02-entradas-salidas/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-02-entradas-salidas/" class="md-nav__link">
         
   
   
@@ -413,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03-variables/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-03-variables/" class="md-nav__link">
         
   
   
@@ -433,32 +433,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.4 Operadores
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-conceptos-basicos/01-04-operadores/" class="md-nav__link">
         
   
   
@@ -469,152 +447,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rest (agrupación)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preguntas-de-repaso" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Preguntas de repaso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-01-condicionales/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-01-condicionales/" class="md-nav__link">
         
   
   
@@ -702,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-02-bucles-basicos/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-02-bucles-basicos/" class="md-nav__link">
         
   
   
@@ -725,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-03-bucles-avanzados/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-03-bucles-avanzados/" class="md-nav__link">
         
   
   
@@ -748,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-04-break-continue/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-04-break-continue/" class="md-nav__link">
         
   
   
@@ -779,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-06-ejercicio-trivial/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-06-ejercicio-trivial/" class="md-nav__link">
         
   
   
@@ -1784,8 +1616,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1812,13 +1646,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1834,7 +1666,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             4. Eventos, formularios y almacenamiento
@@ -1848,7 +1680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-01-eventos/" class="md-nav__link">
+      <a href="../04-01-eventos/" class="md-nav__link">
         
   
   
@@ -1871,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-01-validacion-html5/" class="md-nav__link">
+      <a href="../04-02-01-validacion-html5/" class="md-nav__link">
         
   
   
@@ -1894,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-02-validacion-javascript/" class="md-nav__link">
+      <a href="../04-02-02-validacion-javascript/" class="md-nav__link">
         
   
   
@@ -1917,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-03-validacion-avanzada/" class="md-nav__link">
+      <a href="../04-02-03-validacion-avanzada/" class="md-nav__link">
         
   
   
@@ -1940,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-04-expresiones-regulares/" class="md-nav__link">
+      <a href="../04-02-04-expresiones-regulares/" class="md-nav__link">
         
   
   
@@ -1960,10 +1792,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-01-webstorage/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4.3.1 Webstorage
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1974,6 +1828,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-web-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Qué es Web Storage?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Almacenar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#obtener-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Obtener datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Eliminar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guardar-objetos-o-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Guardar objetos o arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo práctico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-no-usar-cookies-desde-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Por qué no usar cookies desde JavaScript?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1986,7 +1932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-02-indexeddb/" class="md-nav__link">
+      <a href="../04-03-02-indexeddb/" class="md-nav__link">
         
   
   
@@ -2244,119 +2190,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
+  <a href="#que-es-web-storage" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
+      📌 ¿Qué es Web Storage?
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
+  <a href="#almacenar-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
+      📌 Almacenar datos
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
+  <a href="#obtener-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
+      📌 Obtener datos
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest (agrupación)
+      📌 Eliminar datos
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#guardar-objetos-o-arrays" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Guardar objetos o arrays
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-practico" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo práctico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-no-usar-cookies-desde-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Por qué no usar cookies desde JavaScript?
+    </span>
+  </a>
   
 </li>
       
@@ -2385,160 +2277,130 @@
 
 
 
-<h1 id="14-operadores-en-javascript">1.4. Operadores en JavaScript</h1>
-<p>En esta lección vamos a repasar los <strong>principales operadores de JavaScript</strong> que permiten trabajar con valores, expresiones y condiciones.  </p>
+<h1 id="43-almacenamiento-en-el-navegador-web-storage">4.3 Almacenamiento en el navegador (Web Storage)</h1>
+<p>Los navegadores modernos permiten guardar datos de manera <strong>persistente</strong> o <strong>temporal</strong> directamente en el dispositivo del usuario.
+Esto se realiza mediante la <strong>API Web Storage</strong>, que proporciona dos mecanismos principales:
+<code>localStorage</code> y <code>sessionStorage</code>.</p>
 <hr />
-<h2 id="tipos-de-operadores-en-javascript">📌 Tipos de operadores en JavaScript</h2>
-<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
-<p>Sirven para <strong>dar valor a una variable</strong>.<br />
-El más común es <code>=</code>, pero también existen operadores compuestos:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w">    </span><span class="c1">// asignación</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x + 5</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x - 2</span>
-<span class="sb">````</span>
-
-<span class="o">---</span>
-
-<span class="err">###</span><span class="w"> </span><span class="nx">Operadores</span><span class="w"> </span><span class="nx">aritméticos</span>
-
-<span class="nx">Permiten</span><span class="w"> </span><span class="nx">hacer</span><span class="w"> </span><span class="nx">operaciones</span><span class="w"> </span><span class="nx">matemáticas</span><span class="o">:</span>
-
-<span class="sb">```js</span>
-<span class="sb">let suma = 5 + 3;      // 8</span>
-<span class="sb">let resta = 10 - 4;    // 6</span>
-<span class="sb">let multi = 6 * 2;     // 12</span>
-<span class="sb">let division = 15 / 3; // 5</span>
-<span class="sb">let resto = 7 % 2;     // 1 (resto de la división)</span>
-<span class="sb">let potencia = 2 ** 3; // 8</span>
-</code></pre></div>
+<h2 id="que-es-web-storage">📌 ¿Qué es Web Storage?</h2>
+<p>El <strong>Web Storage</strong> permite guardar información en el navegador sin necesidad de usar cookies.
+A diferencia de las cookies, los datos:</p>
+<ul>
+<li>No se envían en cada petición al servidor.</li>
+<li>Se guardan únicamente en el navegador.</li>
+<li>Pueden almacenar más datos (hasta varios MB).</li>
+<li>Se gestionan fácilmente desde JavaScript.</li>
+</ul>
 <hr />
-<h3 id="operadores-logicos">Operadores lógicos</h3>
-<p>Se utilizan para <strong>combinar condiciones</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (AND)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true  (OR)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span><span class="w">     </span><span class="c1">// false (NOT)</span>
-</code></pre></div>
-<hr />
-<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<p>Sirven para comparar valores:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">   </span><span class="c1">// true  (igualdad con conversión implícita)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// false (igualdad estricta, también compara el tipo)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">4</span><span class="w">     </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">      </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="w">     </span><span class="c1">// true</span>
-</code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Conversión implícita de tipos</p>
-<p>En JavaScript, el operador <code>==</code> intenta <strong>convertir los valores a un mismo tipo</strong> antes de compararlos.
-Por eso <code>5 == "5"</code> devuelve <code>true</code>, porque el string <code>"5"</code> se convierte a número automáticamente.
-Esto puede causar resultados inesperados, como:
-<code>js
-    0 == false   // true
-    "" == false  // true
-    null == undefined // true</code>
-Por este motivo se recomienda usar siempre <strong><code>===</code> y <code>!==</code></strong>, que comparan tanto el valor como el tipo.</p>
+<p class="admonition-title">Dos tipos de almacenamiento</p>
+<ul>
+<li><strong>localStorage</strong>: Los datos <strong>persisten incluso al cerrar el navegador</strong>.</li>
+<li><strong>sessionStorage</strong>: Los datos <strong>se eliminan cuando se cierra la pestaña o ventana</strong>.</li>
+</ul>
+<p>Ambos almacenan la información como <strong>pares clave-valor (key–value)</strong> en formato <strong>cadena de texto (string)</strong>.</p>
 </div>
 <hr />
-<h3 id="operador-ternario">Operador ternario</h3>
-<p>Permite escribir una condición en una sola línea:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Eres mayor de edad&quot;</span>
-</code></pre></div>
-<p>Equivale a escribir:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="p">;</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<h2 id="almacenar-datos">📌 Almacenar datos</h2>
+<p>Para guardar información, usamos el método <code>setItem()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// localStorage: persiste entre sesiones</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">);</span>
+
+<span class="c1">// sessionStorage: desaparece al cerrar la pestaña</span>
+<span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;tema&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;oscuro&quot;</span><span class="p">);</span>
 </code></pre></div>
 <hr />
-<h3 id="operadores-de-cadena">Operadores de cadena</h3>
-<p>Se utilizan para <strong>trabajar con strings</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span><span class="w">          </span><span class="c1">// concatenación clásica</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">, ¿qué tal?`</span><span class="p">;</span><span class="w"> </span><span class="c1">// plantilla literal con backticks</span>
+<h2 id="obtener-datos">📌 Obtener datos</h2>
+<p>Usamos <code>getItem()</code> para recuperar un valor almacenado.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nombre</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Laura&quot;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">tema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;tema&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tema</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;oscuro&quot;</span>
 </code></pre></div>
 <hr />
-<h2 id="plantillas-literales-template-literals">📌 Plantillas literales (template literals)</h2>
-<p>Las <strong>plantillas literales</strong> se escriben entre <strong>backticks</strong> (<code>`</code>) y ofrecen más flexibilidad que las comillas simples o dobles.</p>
-<h3 id="ventajas-principales">Ventajas principales:</h3>
-<ol>
-<li><strong>Interpolación de variables</strong> con <code>${variable}</code>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hola Laura</span>
-</code></pre></div>
-<ol>
-<li><strong>Expresiones dentro de <code>${}</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`La suma es </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// La suma es 8</span>
-</code></pre></div>
-<ol>
-<li><strong>Texto multilínea sin necesidad de <code>\n</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
-<span class="sb">Línea 1</span>
-<span class="sb">Línea 2</span>
-<span class="sb">Línea 3</span>
-<span class="sb">`</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<h2 id="eliminar-datos">📌 Eliminar datos</h2>
+<p>Podemos borrar un elemento concreto o vaciar todo el almacenamiento.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Borrar un solo elemento</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="s2">&quot;usuario&quot;</span><span class="p">);</span>
+
+<span class="c1">// Borrar todo</span>
+<span class="nx">sessionStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
 </code></pre></div>
 <hr />
-<h2 id="operadores-rest-y-spread">📌 Operadores rest y spread (<code>...</code>)</h2>
-<p>El operador <code>...</code> en JavaScript puede funcionar de <strong>dos formas diferentes</strong> según el contexto:</p>
-<hr />
-<h3 id="spread-propagacion">Spread (propagación)</h3>
-<p>Permite <strong>expandir</strong> un array o un objeto en sus elementos individuales.<br />
-Es muy útil para copiar, combinar o pasar elementos como argumentos de una función.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo con arrays</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
+<h2 id="guardar-objetos-o-arrays">📌 Guardar objetos o arrays</h2>
+<p>Como Web Storage <strong>solo guarda texto</strong>, debemos convertir los objetos a formato <strong>JSON</strong> antes de guardarlos, y volver a convertirlos al leerlos.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
+<span class="c1">// Guardar objeto</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;persona&quot;</span><span class="p">,</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">persona</span><span class="p">));</span>
 
-<span class="c1">// Ejemplo con objetos</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">persona</span><span class="p">,</span><span class="w"> </span><span class="nx">profesion</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Desarrolladora&quot;</span><span class="w"> </span><span class="p">};</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copia</span><span class="p">);</span><span class="w"> </span><span class="c1">// { nombre: &quot;Laura&quot;, edad: 30, profesion: &quot;Desarrolladora&quot; }</span>
-</code></pre></div>
-<h3 id="rest-agrupacion">Rest (agrupación)</h3>
-<p>Permite <strong>agrupar</strong> múltiples elementos en un array dentro de funciones o estructuras de datos.
-Se usa normalmente en la definición de funciones para recibir un número indefinido de argumentos.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo en funciones</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(...</span><span class="nx">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">numeros</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumar</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">));</span><span class="w"> </span><span class="c1">// 10</span>
-
-<span class="c1">// Ejemplo con destructuring</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">primero</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">resto</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primero</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resto</span><span class="p">);</span><span class="w">   </span><span class="c1">// [20, 30, 40]</span>
+<span class="c1">// Recuperar y convertir a objeto</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;persona&quot;</span><span class="p">));</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">datos</span><span class="p">.</span><span class="nx">nombre</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Laura&quot;</span>
 </code></pre></div>
 <hr />
-<div class="admonition tip">
-<p class="admonition-title">Recuerda</p>
-<p><strong>Spread</strong> → "expande" elementos.</p>
-<p><strong>Rest</strong> → "agrupa" elementos.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cuidado con los tipos de datos</p>
+<p>Todo lo que guardes en <code>localStorage</code> o <code>sessionStorage</code> se convierte en texto.
+Si guardas un número, un booleano o un objeto, conviértelo y recupéralo correctamente con <code>JSON.stringify()</code> y <code>JSON.parse()</code>.</p>
 </div>
+<hr />
+<h2 id="ejemplo-practico">📌 Ejemplo práctico</h2>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejemplo Web Storage<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Guardar nombre en el navegador<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nombre&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Escribe tu nombre&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;guardar&quot;</span><span class="p">&gt;</span>Guardar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;mostrar&quot;</span><span class="p">&gt;</span>Mostrar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;resultado&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;nombre&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">guardar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;guardar&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">mostrar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;mostrar&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;resultado&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="nx">guardar</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;nombreUsuario&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Nombre guardado ✅&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+
+<span class="w">    </span><span class="nx">mostrar</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">nombreGuardado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;nombreUsuario&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="nx">resultado</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombreGuardado</span>
+<span class="w">        </span><span class="o">?</span><span class="w"> </span><span class="sb">`Hola de nuevo, </span><span class="si">${</span><span class="nx">nombreGuardado</span><span class="si">}</span><span class="sb">! 👋`</span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;No hay ningún nombre guardado.&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="por-que-no-usar-cookies-desde-javascript">📌 ¿Por qué no usar cookies desde JavaScript?</h2>
+<p>Aunque las <strong>cookies</strong> también almacenan datos, presentan varios inconvenientes:</p>
+<ul>
+<li>Se envían automáticamente al servidor en cada petición, afectando el rendimiento.</li>
+<li>Su tamaño máximo es muy limitado (≈4 KB).</li>
+<li>Son menos seguras: pueden ser leídas o modificadas fácilmente.</li>
+<li>Su gestión manual desde JavaScript es más compleja (<code>document.cookie</code>).</li>
+</ul>
+<p>Por eso, para guardar datos del <strong>lado del cliente</strong> (por ejemplo, preferencias o configuraciones locales), se recomienda usar <strong>Web Storage</strong>.</p>
+<hr />
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué operador devuelve el resto de una división?</li>
-<li>¿Por qué es más seguro usar <code>===</code> en lugar de <code>==</code>?</li>
-<li>¿A qué equivale el operador ternario en su forma larga con <code>if</code> y <code>else</code>?</li>
-<li>¿Cómo escribirías una plantilla literal que muestre un cálculo dentro de <code>${}</code>?</li>
-<li>¿Qué ventaja tienen las plantillas literales frente a la concatenación clásica con <code>+</code>?</li>
+<li>¿Qué diferencia hay entre <code>localStorage</code> y <code>sessionStorage</code>?</li>
+<li>¿Qué tipo de datos guarda Web Storage por defecto?</li>
+<li>¿Por qué es recomendable usar <code>JSON.stringify()</code> y <code>JSON.parse()</code>?</li>
+<li>¿Qué ventaja ofrece Web Storage frente a las cookies?</li>
+<li>¿Qué método usarías para borrar todos los datos guardados?</li>
 </ol>
 </div>
 

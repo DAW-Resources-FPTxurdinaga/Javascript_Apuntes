@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../01-03-variables/">
+        <link rel="prev" href="../../04-eventos-formularios-almacenamiento/04-03-02-indexeddb/">
       
       
-        <link rel="next" href="../01-05-01-condicionales/">
+        <link rel="next" href="../05-02-creacion-sustitucion-borrado/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1.4 Operadores - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>5.1 Acceso y modificación - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-operadores-en-javascript" class="md-skip">
+        <a href="#51-acceso-y-modificacion-de-elementos-texto-y-atributos" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4 Operadores
+              5.1 Acceso y modificación
             
           </span>
         </div>
@@ -255,10 +255,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +285,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -307,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. Conceptos Básicos
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-introduccion/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-introduccion/" class="md-nav__link">
         
   
   
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-01-primer-ejemplo/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-01-primer-ejemplo/" class="md-nav__link">
         
   
   
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01-javascript-en-html/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-01-javascript-en-html/" class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02-entradas-salidas/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-02-entradas-salidas/" class="md-nav__link">
         
   
   
@@ -413,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03-variables/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-03-variables/" class="md-nav__link">
         
   
   
@@ -433,32 +433,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.4 Operadores
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-conceptos-basicos/01-04-operadores/" class="md-nav__link">
         
   
   
@@ -469,152 +447,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rest (agrupación)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preguntas-de-repaso" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Preguntas de repaso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-01-condicionales/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-01-condicionales/" class="md-nav__link">
         
   
   
@@ -702,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-02-bucles-basicos/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-02-bucles-basicos/" class="md-nav__link">
         
   
   
@@ -725,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-03-bucles-avanzados/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-03-bucles-avanzados/" class="md-nav__link">
         
   
   
@@ -748,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-04-break-continue/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-04-break-continue/" class="md-nav__link">
         
   
   
@@ -779,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-06-ejercicio-trivial/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-06-ejercicio-trivial/" class="md-nav__link">
         
   
   
@@ -2013,8 +1845,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2033,13 +1867,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -2055,7 +1887,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             5. DOM
@@ -2066,10 +1898,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../05-dom/05-01-acceso-modificacion/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    5.1 Acceso y modificación
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2080,6 +1934,152 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#seleccionar-elementos-del-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Seleccionar elementos del DOM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 Seleccionar elementos del DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodos-clasicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos clásicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-modernos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos modernos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificar-el-contenido-de-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Modificar el contenido de un elemento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 Modificar el contenido de un elemento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cambiar texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-html-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cambiar HTML interno
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceso-y-modificacion-de-atributos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Acceso y modificación de atributos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulacion-de-clases-y-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Manipulación de clases y estilos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 Manipulación de clases y estilos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#anadir-quitar-o-alternar-clases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir, quitar o alternar clases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-estilos-desde-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cambiar estilos desde JavaScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insercion-de-contenido-dinamico-con-plantillas-literales" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Inserción de contenido dinámico con plantillas literales
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2092,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-dom/05-02-creacion-sustitucion-borrado/" class="md-nav__link">
+      <a href="../05-02-creacion-sustitucion-borrado/" class="md-nav__link">
         
   
   
@@ -2115,7 +2115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../05-dom/05-03-navegacion/" class="md-nav__link">
+      <a href="../05-03-navegacion/" class="md-nav__link">
         
   
   
@@ -2244,55 +2244,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
+  <a href="#seleccionar-elementos-del-dom" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
+      📌 Seleccionar elementos del DOM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
+    <nav class="md-nav" aria-label="📌 Seleccionar elementos del DOM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
+  <a href="#metodos-clasicos" class="md-nav__link">
     <span class="md-ellipsis">
-      Operadores de asignación
+      Métodos clásicos
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
+  <a href="#metodos-modernos" class="md-nav__link">
     <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
+      Métodos modernos
     </span>
   </a>
   
@@ -2304,19 +2277,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
+  <a href="#modificar-el-contenido-de-un-elemento" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
+      📌 Modificar el contenido de un elemento
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
+    <nav class="md-nav" aria-label="📌 Modificar el contenido de un elemento">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
+  <a href="#cambiar-texto" class="md-nav__link">
     <span class="md-ellipsis">
-      Ventajas principales:
+      Cambiar texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-html-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cambiar HTML interno
     </span>
   </a>
   
@@ -2328,28 +2310,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
+  <a href="#acceso-y-modificacion-de-atributos" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
+      📌 Acceso y modificación de atributos
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulacion-de-clases-y-estilos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Manipulación de clases y estilos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 Manipulación de clases y estilos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
+  <a href="#anadir-quitar-o-alternar-clases" class="md-nav__link">
     <span class="md-ellipsis">
-      Spread (propagación)
+      Añadir, quitar o alternar clases
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
+  <a href="#cambiar-estilos-desde-javascript" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest (agrupación)
+      Cambiar estilos desde JavaScript
     </span>
   </a>
   
@@ -2357,6 +2348,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insercion-de-contenido-dinamico-con-plantillas-literales" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Inserción de contenido dinámico con plantillas literales
+    </span>
+  </a>
   
 </li>
       
@@ -2385,160 +2385,133 @@
 
 
 
-<h1 id="14-operadores-en-javascript">1.4. Operadores en JavaScript</h1>
-<p>En esta lección vamos a repasar los <strong>principales operadores de JavaScript</strong> que permiten trabajar con valores, expresiones y condiciones.  </p>
+<h1 id="51-acceso-y-modificacion-de-elementos-texto-y-atributos">5.1 Acceso y modificación de elementos. Texto y atributos</h1>
+<p>El <strong>DOM (Document Object Model)</strong> es una representación en forma de árbol del documento HTML.
+Cada etiqueta es un <strong>nodo</strong> que JavaScript puede leer, crear, modificar o eliminar.</p>
+<p>Mediante el DOM, podemos <strong>interactuar con la página</strong>: cambiar textos, imágenes, estilos, clases, o atributos de manera dinámica.</p>
 <hr />
-<h2 id="tipos-de-operadores-en-javascript">📌 Tipos de operadores en JavaScript</h2>
-<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
-<p>Sirven para <strong>dar valor a una variable</strong>.<br />
-El más común es <code>=</code>, pero también existen operadores compuestos:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w">    </span><span class="c1">// asignación</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x + 5</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x - 2</span>
-<span class="sb">````</span>
+<h2 id="seleccionar-elementos-del-dom">📌 Seleccionar elementos del DOM</h2>
+<p>Para modificar un elemento, primero hay que <strong>acceder a él</strong>.
+Existen varias formas de seleccionar nodos en el DOM.</p>
+<h3 id="metodos-clasicos">Métodos clásicos</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Devuelve un único elemento</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;titulo&quot;</span><span class="p">);</span>
 
-<span class="o">---</span>
-
-<span class="err">###</span><span class="w"> </span><span class="nx">Operadores</span><span class="w"> </span><span class="nx">aritméticos</span>
-
-<span class="nx">Permiten</span><span class="w"> </span><span class="nx">hacer</span><span class="w"> </span><span class="nx">operaciones</span><span class="w"> </span><span class="nx">matemáticas</span><span class="o">:</span>
-
-<span class="sb">```js</span>
-<span class="sb">let suma = 5 + 3;      // 8</span>
-<span class="sb">let resta = 10 - 4;    // 6</span>
-<span class="sb">let multi = 6 * 2;     // 12</span>
-<span class="sb">let division = 15 / 3; // 5</span>
-<span class="sb">let resto = 7 % 2;     // 1 (resto de la división)</span>
-<span class="sb">let potencia = 2 ** 3; // 8</span>
+<span class="c1">// Devuelve un HTMLCollection (similar a un array)</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s2">&quot;caja&quot;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">);</span>
 </code></pre></div>
-<hr />
-<h3 id="operadores-logicos">Operadores lógicos</h3>
-<p>Se utilizan para <strong>combinar condiciones</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<h3 id="metodos-modernos">Métodos modernos</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Devuelve el primer elemento que cumpla el selector CSS</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#principal&quot;</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.importante&quot;</span><span class="p">);</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (AND)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true  (OR)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span><span class="w">     </span><span class="c1">// false (NOT)</span>
+<span class="c1">// Devuelve una lista (NodeList) con todos los que coincidan</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;.item&quot;</span><span class="p">);</span>
+
+<span class="c1">// Ejemplo: recorrer todos los elementos seleccionados</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;.item&quot;</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">el</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">el</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;blue&quot;</span><span class="p">;</span>
+<span class="p">});</span>
 </code></pre></div>
-<hr />
-<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<p>Sirven para comparar valores:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">   </span><span class="c1">// true  (igualdad con conversión implícita)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// false (igualdad estricta, también compara el tipo)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">4</span><span class="w">     </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">      </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="w">     </span><span class="c1">// true</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Conversión implícita de tipos</p>
-<p>En JavaScript, el operador <code>==</code> intenta <strong>convertir los valores a un mismo tipo</strong> antes de compararlos.
-Por eso <code>5 == "5"</code> devuelve <code>true</code>, porque el string <code>"5"</code> se convierte a número automáticamente.
-Esto puede causar resultados inesperados, como:
-<code>js
-    0 == false   // true
-    "" == false  // true
-    null == undefined // true</code>
-Por este motivo se recomienda usar siempre <strong><code>===</code> y <code>!==</code></strong>, que comparan tanto el valor como el tipo.</p>
+<div class="admonition note">
+<p class="admonition-title">Métodos recomendados</p>
+<p>En JavaScript moderno, se recomienda usar <code>querySelector()</code> y <code>querySelectorAll()</code>
+porque permiten trabajar con <strong>selectores CSS</strong> y son más flexibles.</p>
 </div>
 <hr />
-<h3 id="operador-ternario">Operador ternario</h3>
-<p>Permite escribir una condición en una sola línea:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Eres mayor de edad&quot;</span>
+<h2 id="modificar-el-contenido-de-un-elemento">📌 Modificar el contenido de un elemento</h2>
+<p>Podemos cambiar el <strong>texto</strong> o el <strong>HTML interno</strong> de un nodo.</p>
+<h3 id="cambiar-texto">Cambiar texto</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">titulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+
+<span class="c1">// Sustituye el texto del elemento</span>
+<span class="nx">titulo</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Nuevo título&quot;</span><span class="p">;</span>
 </code></pre></div>
-<p>Equivale a escribir:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="p">;</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<h3 id="cambiar-html-interno">Cambiar HTML interno</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">contenedor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#info&quot;</span><span class="p">);</span>
+
+<span class="c1">// Permite incluir etiquetas HTML</span>
+<span class="nx">contenedor</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&lt;strong&gt;Actualizado:&lt;/strong&gt; contenido dinámico&quot;</span><span class="p">;</span>
 </code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">innerHTML vs textContent</p>
+<ul>
+<li><code>textContent</code> solo cambia el texto plano, sin interpretar etiquetas.</li>
+<li><code>innerHTML</code> interpreta el código HTML que insertas.
+Úsalo con cuidado si el contenido proviene del usuario, ya que puede generar <strong>riesgos de seguridad (XSS)</strong>.</li>
+</ul>
+</div>
 <hr />
-<h3 id="operadores-de-cadena">Operadores de cadena</h3>
-<p>Se utilizan para <strong>trabajar con strings</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span><span class="w">          </span><span class="c1">// concatenación clásica</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">, ¿qué tal?`</span><span class="p">;</span><span class="w"> </span><span class="c1">// plantilla literal con backticks</span>
+<h2 id="acceso-y-modificacion-de-atributos">📌 Acceso y modificación de atributos</h2>
+<p>Podemos leer o cambiar los <strong>atributos</strong> de una etiqueta (por ejemplo, <code>src</code>, <code>href</code>, <code>alt</code>, <code>title</code>…).</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">imagen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;img&quot;</span><span class="p">);</span>
+
+<span class="c1">// Leer el valor de un atributo</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">imagen</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">));</span>
+
+<span class="c1">// Cambiar un atributo</span>
+<span class="nx">imagen</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;alt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Logo actualizado&quot;</span><span class="p">);</span>
+<span class="nx">imagen</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;img/nuevo-logo.png&quot;</span><span class="p">);</span>
+
+<span class="c1">// Eliminar un atributo</span>
+<span class="nx">imagen</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">);</span>
 </code></pre></div>
+<p>También es posible acceder directamente a muchas propiedades:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">imagen</span><span class="p">.</span><span class="nx">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;img/nuevo-logo.png&quot;</span><span class="p">;</span>
+<span class="nx">imagen</span><span class="p">.</span><span class="nx">alt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Logo actualizado&quot;</span><span class="p">;</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">getAttribute() vs propiedades directas</p>
+<ul>
+<li>Las propiedades (<code>imagen.src</code>) reflejan el <strong>estado actual</strong> del elemento en el DOM.</li>
+<li>Los atributos (<code>getAttribute("src")</code>) reflejan el <strong>valor original</strong> definido en el HTML.</li>
+<li>En la mayoría de los casos se pueden usar indistintamente, pero es importante conocer la diferencia.</li>
+</ul>
+</div>
 <hr />
-<h2 id="plantillas-literales-template-literals">📌 Plantillas literales (template literals)</h2>
-<p>Las <strong>plantillas literales</strong> se escriben entre <strong>backticks</strong> (<code>`</code>) y ofrecen más flexibilidad que las comillas simples o dobles.</p>
-<h3 id="ventajas-principales">Ventajas principales:</h3>
-<ol>
-<li><strong>Interpolación de variables</strong> con <code>${variable}</code>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hola Laura</span>
+<h2 id="manipulacion-de-clases-y-estilos">📌 Manipulación de clases y estilos</h2>
+<p>Las clases permiten modificar la apariencia mediante CSS sin tocar directamente los estilos.</p>
+<h3 id="anadir-quitar-o-alternar-clases">Añadir, quitar o alternar clases</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">caja</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;.caja&quot;</span><span class="p">);</span>
+
+<span class="nx">caja</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;activa&quot;</span><span class="p">);</span>
+<span class="nx">caja</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s2">&quot;oculta&quot;</span><span class="p">);</span>
+<span class="nx">caja</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s2">&quot;resaltada&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// la añade si no la tiene, la quita si la tiene</span>
 </code></pre></div>
-<ol>
-<li><strong>Expresiones dentro de <code>${}</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`La suma es </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// La suma es 8</span>
+<h3 id="cambiar-estilos-desde-javascript">Cambiar estilos desde JavaScript</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">titulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+
+<span class="nx">titulo</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">;</span>
+<span class="nx">titulo</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;yellow&quot;</span><span class="p">;</span>
 </code></pre></div>
-<ol>
-<li><strong>Texto multilínea sin necesidad de <code>\n</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
-<span class="sb">Línea 1</span>
-<span class="sb">Línea 2</span>
-<span class="sb">Línea 3</span>
+<div class="admonition warning">
+<p class="admonition-title">Buenas prácticas</p>
+<p>Es preferible cambiar <strong>clases CSS</strong> en lugar de modificar estilos directamente desde JavaScript.
+Así se mantiene la <strong>separación entre contenido, estilo y comportamiento.</strong></p>
+</div>
+<hr />
+<h2 id="insercion-de-contenido-dinamico-con-plantillas-literales">📌 Inserción de contenido dinámico con plantillas literales</h2>
+<p>En JavaScript moderno, los <strong>template literals</strong> (comillas invertidas) facilitan insertar contenido dinámico en el DOM.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">usuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">contenedor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#saludo&quot;</span><span class="p">);</span>
+
+<span class="nx">contenedor</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">  &lt;p&gt;Bienvenida, &lt;strong&gt;</span><span class="si">${</span><span class="nx">usuario</span><span class="si">}</span><span class="sb">&lt;/strong&gt; 🎉&lt;/p&gt;</span>
 <span class="sb">`</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
 </code></pre></div>
+<p>De esta forma, podemos construir fragmentos HTML reutilizando variables o resultados de funciones.</p>
 <hr />
-<h2 id="operadores-rest-y-spread">📌 Operadores rest y spread (<code>...</code>)</h2>
-<p>El operador <code>...</code> en JavaScript puede funcionar de <strong>dos formas diferentes</strong> según el contexto:</p>
-<hr />
-<h3 id="spread-propagacion">Spread (propagación)</h3>
-<p>Permite <strong>expandir</strong> un array o un objeto en sus elementos individuales.<br />
-Es muy útil para copiar, combinar o pasar elementos como argumentos de una función.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo con arrays</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
-
-<span class="c1">// Ejemplo con objetos</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">persona</span><span class="p">,</span><span class="w"> </span><span class="nx">profesion</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Desarrolladora&quot;</span><span class="w"> </span><span class="p">};</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copia</span><span class="p">);</span><span class="w"> </span><span class="c1">// { nombre: &quot;Laura&quot;, edad: 30, profesion: &quot;Desarrolladora&quot; }</span>
-</code></pre></div>
-<h3 id="rest-agrupacion">Rest (agrupación)</h3>
-<p>Permite <strong>agrupar</strong> múltiples elementos en un array dentro de funciones o estructuras de datos.
-Se usa normalmente en la definición de funciones para recibir un número indefinido de argumentos.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo en funciones</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(...</span><span class="nx">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">numeros</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumar</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">));</span><span class="w"> </span><span class="c1">// 10</span>
-
-<span class="c1">// Ejemplo con destructuring</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">primero</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">resto</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primero</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resto</span><span class="p">);</span><span class="w">   </span><span class="c1">// [20, 30, 40]</span>
-</code></pre></div>
-<hr />
-<div class="admonition tip">
-<p class="admonition-title">Recuerda</p>
-<p><strong>Spread</strong> → "expande" elementos.</p>
-<p><strong>Rest</strong> → "agrupa" elementos.</p>
-</div>
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué operador devuelve el resto de una división?</li>
-<li>¿Por qué es más seguro usar <code>===</code> en lugar de <code>==</code>?</li>
-<li>¿A qué equivale el operador ternario en su forma larga con <code>if</code> y <code>else</code>?</li>
-<li>¿Cómo escribirías una plantilla literal que muestre un cálculo dentro de <code>${}</code>?</li>
-<li>¿Qué ventaja tienen las plantillas literales frente a la concatenación clásica con <code>+</code>?</li>
+<li>¿Qué método moderno permite seleccionar varios elementos usando un selector CSS?</li>
+<li>¿Qué diferencia hay entre <code>textContent</code> e <code>innerHTML</code>?</li>
+<li>¿Qué hace el método <code>setAttribute()</code>?</li>
+<li>¿Por qué conviene usar <code>classList</code> en lugar de <code>style</code> para cambiar la apariencia?</li>
+<li>¿Qué ventaja tienen los <em>template literals</em> al generar contenido dinámico?</li>
 </ol>
 </div>
 

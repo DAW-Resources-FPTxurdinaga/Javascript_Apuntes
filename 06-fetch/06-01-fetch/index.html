@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../01-03-variables/">
+        <link rel="prev" href="../../05-dom/05-03-navegacion/">
       
-      
-        <link rel="next" href="../01-05-01-condicionales/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>1.4 Operadores - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>6.1 Fetch - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-operadores-en-javascript" class="md-skip">
+        <a href="#6-comunicacion-con-apis-fetch" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4 Operadores
+              6.1 Fetch
             
           </span>
         </div>
@@ -255,10 +253,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +283,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -307,7 +305,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. Conceptos Básicos
@@ -321,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-introduccion/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-introduccion/" class="md-nav__link">
         
   
   
@@ -344,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-01-primer-ejemplo/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-01-primer-ejemplo/" class="md-nav__link">
         
   
   
@@ -367,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01-javascript-en-html/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-01-javascript-en-html/" class="md-nav__link">
         
   
   
@@ -390,7 +388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02-entradas-salidas/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-02-entradas-salidas/" class="md-nav__link">
         
   
   
@@ -413,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03-variables/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-03-variables/" class="md-nav__link">
         
   
   
@@ -433,32 +431,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.4 Operadores
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-conceptos-basicos/01-04-operadores/" class="md-nav__link">
         
   
   
@@ -469,152 +445,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rest (agrupación)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preguntas-de-repaso" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Preguntas de repaso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-01-condicionales/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-01-condicionales/" class="md-nav__link">
         
   
   
@@ -702,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-02-bucles-basicos/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-02-bucles-basicos/" class="md-nav__link">
         
   
   
@@ -725,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-03-bucles-avanzados/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-03-bucles-avanzados/" class="md-nav__link">
         
   
   
@@ -748,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-04-break-continue/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-04-break-continue/" class="md-nav__link">
         
   
   
@@ -779,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-06-ejercicio-trivial/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-06-ejercicio-trivial/" class="md-nav__link">
         
   
   
@@ -2142,8 +1972,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -2158,13 +1990,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
@@ -2180,7 +2010,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             6. Fetch
@@ -2191,10 +2021,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../06-fetch/06-01-fetch/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6.1 Fetch
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2205,6 +2057,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sintaxis-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Sintaxis básica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-con-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Uso con async/await
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-del-estado-de-la-respuesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Comprobación del estado de la respuesta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-los-datos-en-el-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Mostrar los datos en el DOM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enviar-datos-con-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Enviar datos con POST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-con-ajax-clasico" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Diferencias con AJAX clásico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-completo-cargar-y-mostrar-publicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo completo: cargar y mostrar publicaciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2244,119 +2188,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
+  <a href="#sintaxis-basica" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
+      📌 Sintaxis básica
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
+  <a href="#uso-con-asyncawait" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
+      📌 Uso con async/await
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
+  <a href="#comprobacion-del-estado-de-la-respuesta" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
+      📌 Comprobación del estado de la respuesta
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-los-datos-en-el-dom" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest (agrupación)
+      📌 Mostrar los datos en el DOM
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#enviar-datos-con-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Enviar datos con POST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-con-ajax-clasico" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Diferencias con AJAX clásico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-completo-cargar-y-mostrar-publicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo completo: cargar y mostrar publicaciones
+    </span>
+  </a>
   
 </li>
       
@@ -2385,160 +2275,186 @@
 
 
 
-<h1 id="14-operadores-en-javascript">1.4. Operadores en JavaScript</h1>
-<p>En esta lección vamos a repasar los <strong>principales operadores de JavaScript</strong> que permiten trabajar con valores, expresiones y condiciones.  </p>
+<h1 id="6-comunicacion-con-apis-fetch">6. Comunicación con APIs: Fetch</h1>
+<p>La <strong>API Fetch</strong> permite realizar peticiones HTTP (GET, POST, etc.) para obtener o enviar datos a un servidor, sustituyendo a la antigua <code>XMLHttpRequest</code>.</p>
+<p>Su uso es <strong>asíncrono</strong> y se basa en <strong>promesas</strong>, lo que la hace más simple y legible.</p>
 <hr />
-<h2 id="tipos-de-operadores-en-javascript">📌 Tipos de operadores en JavaScript</h2>
-<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
-<p>Sirven para <strong>dar valor a una variable</strong>.<br />
-El más común es <code>=</code>, pero también existen operadores compuestos:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w">    </span><span class="c1">// asignación</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x + 5</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x - 2</span>
-<span class="sb">````</span>
+<h2 id="sintaxis-basica">📌 Sintaxis básica</h2>
+<div class="highlight"><pre><span></span><code><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/users&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span><span class="w"> </span><span class="c1">// transforma la respuesta a JSON</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span><span class="w">    </span><span class="c1">// usa los datos</span>
+<span class="w">  </span><span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">));</span>
+</code></pre></div>
+<ol>
+<li><code>fetch(url)</code> realiza la petición.</li>
+<li>Devuelve una <strong>promesa</strong> que se resuelve con un objeto <code>Response</code>.</li>
+<li>Usamos <code>.json()</code>, <code>.text()</code> o <code>.blob()</code> para procesar la respuesta.</li>
+<li>Si hay error de red o en la respuesta, lo capturamos con <code>.catch()</code>.</li>
+</ol>
+<hr />
+<h2 id="uso-con-asyncawait">📌 Uso con <code>async/await</code></h2>
+<p>El mismo ejemplo con sintaxis moderna:</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">cargarUsuarios</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/users&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">datos</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error al obtener los datos:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 
-<span class="o">---</span>
+<span class="nx">cargarUsuarios</span><span class="p">();</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Por qué usar async/await</p>
+<p>Hace el código <strong>más legible</strong> y se comporta como si fuera secuencial, pero sigue siendo asíncrono.</p>
+</div>
+<hr />
+<h2 id="comprobacion-del-estado-de-la-respuesta">📌 Comprobación del estado de la respuesta</h2>
+<p>El método <code>fetch()</code> <strong>no lanza un error automáticamente</strong> si la respuesta del servidor es un 404 o 500, por lo que debemos comprobarlo.</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">cargarUsuarios</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/users&quot;</span><span class="p">);</span>
 
-<span class="err">###</span><span class="w"> </span><span class="nx">Operadores</span><span class="w"> </span><span class="nx">aritméticos</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="sb">`Error HTTP: </span><span class="si">${</span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 
-<span class="nx">Permiten</span><span class="w"> </span><span class="nx">hacer</span><span class="w"> </span><span class="nx">operaciones</span><span class="w"> </span><span class="nx">matemáticas</span><span class="o">:</span>
-
-<span class="sb">```js</span>
-<span class="sb">let suma = 5 + 3;      // 8</span>
-<span class="sb">let resta = 10 - 4;    // 6</span>
-<span class="sb">let multi = 6 * 2;     // 12</span>
-<span class="sb">let division = 15 / 3; // 5</span>
-<span class="sb">let resto = 7 % 2;     // 1 (resto de la división)</span>
-<span class="sb">let potencia = 2 ** 3; // 8</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">datos</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error en la petición:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="operadores-logicos">Operadores lógicos</h3>
-<p>Se utilizan para <strong>combinar condiciones</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<h2 id="mostrar-los-datos-en-el-dom">📌 Mostrar los datos en el DOM</h2>
+<p>Podemos usar <code>fetch()</code> para generar contenido dinámico.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;lista&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (AND)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true  (OR)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span><span class="w">     </span><span class="c1">// false (NOT)</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">cargarUsuarios</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/users&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">usuarios</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;lista&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">lista</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// limpia antes de insertar</span>
+
+<span class="w">  </span><span class="nx">usuarios</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">u</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">li</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&quot;li&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">li</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">u</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nx">u</span><span class="p">.</span><span class="nx">email</span><span class="si">}</span><span class="sb">)`</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">lista</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">cargarUsuarios</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <hr />
-<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<p>Sirven para comparar valores:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">   </span><span class="c1">// true  (igualdad con conversión implícita)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// false (igualdad estricta, también compara el tipo)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">4</span><span class="w">     </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">      </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="w">     </span><span class="c1">// true</span>
+<h2 id="enviar-datos-con-post">📌 Enviar datos con <code>POST</code></h2>
+<p><code>fetch()</code> también permite <strong>enviar información</strong> al servidor (por ejemplo, al enviar un formulario).</p>
+<div class="highlight"><pre><span></span><code><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">enviarDatos</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nuevoUsuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">correo</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;laura@example.com&quot;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/users&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s2">&quot;Content-Type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">nuevoUsuario</span><span class="p">)</span>
+<span class="w">  </span><span class="p">});</span>
+
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Respuesta del servidor:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">resultado</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">enviarDatos</span><span class="p">();</span>
 </code></pre></div>
+<hr />
+<h2 id="diferencias-con-ajax-clasico">📌 Diferencias con AJAX clásico</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th><code>XMLHttpRequest</code></th>
+<th><code>fetch()</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sintaxis</td>
+<td>Verbosa</td>
+<td>Clara y moderna</td>
+</tr>
+<tr>
+<td>Soporta Promesas</td>
+<td>❌ No</td>
+<td>✅ Sí</td>
+</tr>
+<tr>
+<td>Cuerpo JSON</td>
+<td>Manual</td>
+<td>Automático con <code>.json()</code></td>
+</tr>
+<tr>
+<td>Control de errores HTTP</td>
+<td>Implícito</td>
+<td>Debe comprobarse con <code>response.ok</code></td>
+</tr>
+</tbody>
+</table>
 <div class="admonition info">
-<p class="admonition-title">Conversión implícita de tipos</p>
-<p>En JavaScript, el operador <code>==</code> intenta <strong>convertir los valores a un mismo tipo</strong> antes de compararlos.
-Por eso <code>5 == "5"</code> devuelve <code>true</code>, porque el string <code>"5"</code> se convierte a número automáticamente.
-Esto puede causar resultados inesperados, como:
-<code>js
-    0 == false   // true
-    "" == false  // true
-    null == undefined // true</code>
-Por este motivo se recomienda usar siempre <strong><code>===</code> y <code>!==</code></strong>, que comparan tanto el valor como el tipo.</p>
+<p class="admonition-title">En la práctica</p>
+<ul>
+<li>Usa siempre <code>fetch()</code> con <code>async/await</code>.</li>
+<li>Comprueba el código de estado (<code>response.ok</code>).</li>
+<li>Convierte la respuesta con <code>.json()</code>.</li>
+<li>Maneja errores con <code>try...catch</code>.</li>
+</ul>
 </div>
 <hr />
-<h3 id="operador-ternario">Operador ternario</h3>
-<p>Permite escribir una condición en una sola línea:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Eres mayor de edad&quot;</span>
-</code></pre></div>
-<p>Equivale a escribir:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="p">;</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<hr />
-<h3 id="operadores-de-cadena">Operadores de cadena</h3>
-<p>Se utilizan para <strong>trabajar con strings</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span><span class="w">          </span><span class="c1">// concatenación clásica</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">, ¿qué tal?`</span><span class="p">;</span><span class="w"> </span><span class="c1">// plantilla literal con backticks</span>
-</code></pre></div>
-<hr />
-<h2 id="plantillas-literales-template-literals">📌 Plantillas literales (template literals)</h2>
-<p>Las <strong>plantillas literales</strong> se escriben entre <strong>backticks</strong> (<code>`</code>) y ofrecen más flexibilidad que las comillas simples o dobles.</p>
-<h3 id="ventajas-principales">Ventajas principales:</h3>
-<ol>
-<li><strong>Interpolación de variables</strong> con <code>${variable}</code>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hola Laura</span>
-</code></pre></div>
-<ol>
-<li><strong>Expresiones dentro de <code>${}</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`La suma es </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// La suma es 8</span>
-</code></pre></div>
-<ol>
-<li><strong>Texto multilínea sin necesidad de <code>\n</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
-<span class="sb">Línea 1</span>
-<span class="sb">Línea 2</span>
-<span class="sb">Línea 3</span>
-<span class="sb">`</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
-</code></pre></div>
-<hr />
-<h2 id="operadores-rest-y-spread">📌 Operadores rest y spread (<code>...</code>)</h2>
-<p>El operador <code>...</code> en JavaScript puede funcionar de <strong>dos formas diferentes</strong> según el contexto:</p>
-<hr />
-<h3 id="spread-propagacion">Spread (propagación)</h3>
-<p>Permite <strong>expandir</strong> un array o un objeto en sus elementos individuales.<br />
-Es muy útil para copiar, combinar o pasar elementos como argumentos de una función.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo con arrays</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
+<h2 id="ejemplo-completo-cargar-y-mostrar-publicaciones">📌 Ejemplo completo: cargar y mostrar publicaciones</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Publicaciones<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;posts&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">cargarPosts</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s2">&quot;https://jsonplaceholder.typicode.com/posts?_limit=5&quot;</span><span class="p">);</span>
 
-<span class="c1">// Ejemplo con objetos</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">persona</span><span class="p">,</span><span class="w"> </span><span class="nx">profesion</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Desarrolladora&quot;</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;No se pudieron cargar las publicaciones&quot;</span><span class="p">);</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copia</span><span class="p">);</span><span class="w"> </span><span class="c1">// { nombre: &quot;Laura&quot;, edad: 30, profesion: &quot;Desarrolladora&quot; }</span>
-</code></pre></div>
-<h3 id="rest-agrupacion">Rest (agrupación)</h3>
-<p>Permite <strong>agrupar</strong> múltiples elementos en un array dentro de funciones o estructuras de datos.
-Se usa normalmente en la definición de funciones para recibir un número indefinido de argumentos.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo en funciones</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(...</span><span class="nx">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">numeros</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;posts&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="nx">lista</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">posts</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">p</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span>
+<span class="sb">      &lt;li&gt;</span>
+<span class="sb">        &lt;strong&gt;</span><span class="si">${</span><span class="nx">p</span><span class="p">.</span><span class="nx">title</span><span class="si">}</span><span class="sb">&lt;/strong&gt;&lt;br&gt;</span>
+<span class="sb">        </span><span class="si">${</span><span class="nx">p</span><span class="p">.</span><span class="nx">body</span><span class="si">}</span>
+<span class="sb">      &lt;/li&gt;</span>
+<span class="sb">    `</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;posts&quot;</span><span class="p">).</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;❌ Error al cargar las publicaciones.&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumar</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">));</span><span class="w"> </span><span class="c1">// 10</span>
-
-<span class="c1">// Ejemplo con destructuring</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">primero</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">resto</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primero</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resto</span><span class="p">);</span><span class="w">   </span><span class="c1">// [20, 30, 40]</span>
+<span class="nx">cargarPosts</span><span class="p">();</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <hr />
-<div class="admonition tip">
-<p class="admonition-title">Recuerda</p>
-<p><strong>Spread</strong> → "expande" elementos.</p>
-<p><strong>Rest</strong> → "agrupa" elementos.</p>
-</div>
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué operador devuelve el resto de una división?</li>
-<li>¿Por qué es más seguro usar <code>===</code> en lugar de <code>==</code>?</li>
-<li>¿A qué equivale el operador ternario en su forma larga con <code>if</code> y <code>else</code>?</li>
-<li>¿Cómo escribirías una plantilla literal que muestre un cálculo dentro de <code>${}</code>?</li>
-<li>¿Qué ventaja tienen las plantillas literales frente a la concatenación clásica con <code>+</code>?</li>
+<li>¿Qué devuelve la función <code>fetch()</code>?</li>
+<li>¿Por qué debemos usar <code>response.json()</code>?</li>
+<li>¿Qué ocurre si el servidor devuelve un error 404?</li>
+<li>¿Cómo se envían datos en formato JSON con <code>fetch()</code>?</li>
+<li>¿Por qué es recomendable usar <code>async/await</code> en lugar de <code>.then()</code>?</li>
 </ol>
 </div>
 

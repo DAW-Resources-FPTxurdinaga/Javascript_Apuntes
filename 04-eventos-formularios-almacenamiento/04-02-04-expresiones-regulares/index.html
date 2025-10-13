@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../01-03-variables/">
+        <link rel="prev" href="../04-02-03-validacion-avanzada/">
       
       
-        <link rel="next" href="../01-05-01-condicionales/">
+        <link rel="next" href="../04-03-01-webstorage/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1.4 Operadores - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>4.2.4 Expresiones regulares - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-operadores-en-javascript" class="md-skip">
+        <a href="#424-expresiones-regulares-en-javascript-y-html5" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4 Operadores
+              4.2.4 Expresiones regulares
             
           </span>
         </div>
@@ -255,10 +255,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +285,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -307,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. Conceptos Básicos
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-introduccion/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-introduccion/" class="md-nav__link">
         
   
   
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-01-primer-ejemplo/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-01-primer-ejemplo/" class="md-nav__link">
         
   
   
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01-javascript-en-html/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-01-javascript-en-html/" class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02-entradas-salidas/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-02-entradas-salidas/" class="md-nav__link">
         
   
   
@@ -413,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03-variables/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-03-variables/" class="md-nav__link">
         
   
   
@@ -433,32 +433,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.4 Operadores
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-conceptos-basicos/01-04-operadores/" class="md-nav__link">
         
   
   
@@ -469,152 +447,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rest (agrupación)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preguntas-de-repaso" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Preguntas de repaso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-01-condicionales/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-01-condicionales/" class="md-nav__link">
         
   
   
@@ -702,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-02-bucles-basicos/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-02-bucles-basicos/" class="md-nav__link">
         
   
   
@@ -725,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-03-bucles-avanzados/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-03-bucles-avanzados/" class="md-nav__link">
         
   
   
@@ -748,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-04-break-continue/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-04-break-continue/" class="md-nav__link">
         
   
   
@@ -779,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-06-ejercicio-trivial/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-06-ejercicio-trivial/" class="md-nav__link">
         
   
   
@@ -1784,8 +1616,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1812,13 +1646,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1834,7 +1666,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             4. Eventos, formularios y almacenamiento
@@ -1848,7 +1680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-01-eventos/" class="md-nav__link">
+      <a href="../04-01-eventos/" class="md-nav__link">
         
   
   
@@ -1871,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-01-validacion-html5/" class="md-nav__link">
+      <a href="../04-02-01-validacion-html5/" class="md-nav__link">
         
   
   
@@ -1894,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-02-validacion-javascript/" class="md-nav__link">
+      <a href="../04-02-02-validacion-javascript/" class="md-nav__link">
         
   
   
@@ -1917,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-03-validacion-avanzada/" class="md-nav__link">
+      <a href="../04-02-03-validacion-avanzada/" class="md-nav__link">
         
   
   
@@ -1937,10 +1769,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-04-expresiones-regulares/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4.2.4 Expresiones regulares
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1951,6 +1805,164 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-usar-expresiones-regulares-en-html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 1. Usar expresiones regulares en HTML5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-validar-expresiones-regulares-con-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 2. Validar expresiones regulares con JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 2. Validar expresiones regulares con JavaScript">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo básico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-con-un-formulario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo con un formulario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-elementos-de-una-expresion-regular" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 3. Elementos de una expresión regular
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-ejemplos-practicos-de-validacion-con-expresiones-regulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 4. Ejemplos prácticos de validación con expresiones regulares
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 4. Ejemplos prácticos de validación con expresiones regulares">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-nombre-solo-letras-y-espacios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un nombre (solo letras y espacios)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-correo-electronico-version-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un correo electrónico (versión básica)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-contrasena-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una contraseña segura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-codigo-postal-espana" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un código postal (España)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-matricula-espanola-moderna" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una matrícula española moderna
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-fecha-en-formato-ddmmaaaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una fecha en formato dd/mm/aaaa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-numero-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un número decimal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1963,7 +1975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-01-webstorage/" class="md-nav__link">
+      <a href="../04-03-01-webstorage/" class="md-nav__link">
         
   
   
@@ -1986,7 +1998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-02-indexeddb/" class="md-nav__link">
+      <a href="../04-03-02-indexeddb/" class="md-nav__link">
         
   
   
@@ -2244,55 +2256,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
+  <a href="#1-usar-expresiones-regulares-en-html5" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
+      📌 1. Usar expresiones regulares en HTML5
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-validar-expresiones-regulares-con-javascript" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 2. Validar expresiones regulares con JavaScript
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 2. Validar expresiones regulares con JavaScript">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
+  <a href="#ejemplo-basico" class="md-nav__link">
     <span class="md-ellipsis">
-      Operadores de asignación
+      Ejemplo básico
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
+  <a href="#ejemplo-con-un-formulario" class="md-nav__link">
     <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
+      Ejemplo con un formulario
     </span>
   </a>
   
@@ -2304,52 +2298,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
+  <a href="#3-elementos-de-una-expresion-regular" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
+      📌 3. Elementos de una expresión regular
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
+  <a href="#4-ejemplos-practicos-de-validacion-con-expresiones-regulares" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
+      📌 4. Ejemplos prácticos de validación con expresiones regulares
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
+    <nav class="md-nav" aria-label="📌 4. Ejemplos prácticos de validación con expresiones regulares">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
+  <a href="#validar-un-nombre-solo-letras-y-espacios" class="md-nav__link">
     <span class="md-ellipsis">
-      Spread (propagación)
+      🔹 Validar un nombre (solo letras y espacios)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
+  <a href="#validar-un-correo-electronico-version-basica" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest (agrupación)
+      🔹 Validar un correo electrónico (versión básica)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-contrasena-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una contraseña segura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-codigo-postal-espana" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un código postal (España)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-matricula-espanola-moderna" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una matrícula española moderna
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-una-fecha-en-formato-ddmmaaaa" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar una fecha en formato dd/mm/aaaa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validar-un-numero-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Validar un número decimal
     </span>
   </a>
   
@@ -2385,160 +2409,316 @@
 
 
 
-<h1 id="14-operadores-en-javascript">1.4. Operadores en JavaScript</h1>
-<p>En esta lección vamos a repasar los <strong>principales operadores de JavaScript</strong> que permiten trabajar con valores, expresiones y condiciones.  </p>
+<h1 id="424-expresiones-regulares-en-javascript-y-html5">4.2.4 Expresiones regulares en JavaScript y HTML5</h1>
+<p>Las <strong>expresiones regulares</strong> (o <em>regex</em>) son patrones que permiten <strong>buscar, validar o reemplazar texto</strong>.
+Son una herramienta muy potente para validar datos, filtrar entradas o realizar búsquedas complejas dentro de cadenas.</p>
+<p>En esta lección aprenderás:</p>
+<ul>
+<li>Cómo usar expresiones regulares en <strong>campos de formulario HTML5</strong> mediante el atributo <code>pattern</code>.</li>
+<li>Cómo validarlas y aplicarlas en <strong>JavaScript</strong>.</li>
+<li>Qué <strong>símbolos y estructuras</strong> forman parte de una expresión regular.</li>
+<li>Y cómo construir tus propias expresiones paso a paso.</li>
+</ul>
 <hr />
-<h2 id="tipos-de-operadores-en-javascript">📌 Tipos de operadores en JavaScript</h2>
-<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
-<p>Sirven para <strong>dar valor a una variable</strong>.<br />
-El más común es <code>=</code>, pero también existen operadores compuestos:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w">    </span><span class="c1">// asignación</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x + 5</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x - 2</span>
-<span class="sb">````</span>
-
-<span class="o">---</span>
-
-<span class="err">###</span><span class="w"> </span><span class="nx">Operadores</span><span class="w"> </span><span class="nx">aritméticos</span>
-
-<span class="nx">Permiten</span><span class="w"> </span><span class="nx">hacer</span><span class="w"> </span><span class="nx">operaciones</span><span class="w"> </span><span class="nx">matemáticas</span><span class="o">:</span>
-
-<span class="sb">```js</span>
-<span class="sb">let suma = 5 + 3;      // 8</span>
-<span class="sb">let resta = 10 - 4;    // 6</span>
-<span class="sb">let multi = 6 * 2;     // 12</span>
-<span class="sb">let division = 15 / 3; // 5</span>
-<span class="sb">let resto = 7 % 2;     // 1 (resto de la división)</span>
-<span class="sb">let potencia = 2 ** 3; // 8</span>
+<h2 id="1-usar-expresiones-regulares-en-html5">📌 1. Usar expresiones regulares en HTML5</h2>
+<p>El atributo <code>pattern</code> permite definir un <strong>patrón de validación</strong> directamente en un elemento de formulario.</p>
+<p>El navegador comprobará que el valor introducido <strong>coincida</strong> con la expresión regular antes de enviar el formulario.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Nombre de usuario:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> 
+    <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> 
+    <span class="na">name</span><span class="o">=</span><span class="s">&quot;usuario&quot;</span> 
+    <span class="na">pattern</span><span class="o">=</span><span class="s">&quot;[A-Za-z0-9]+&quot;</span> 
+    <span class="na">title</span><span class="o">=</span><span class="s">&quot;Solo letras y números, sin espacios&quot;</span>
+    <span class="na">required</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Enviar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></div>
+<ul>
+<li><code>[A-Za-z0-9]+</code> → permite <strong>una o más letras o números</strong>.</li>
+<li>Si el usuario introduce un carácter no válido (como <code>@</code> o <code>#</code>), el navegador muestra el mensaje definido en <code>title</code>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Recomendación</p>
+<p>El atributo <code>pattern</code> solo se aplica cuando el campo <strong>no está vacío</strong>.
+Si quieres que sea obligatorio, añade también <code>required</code>.</p>
+</div>
 <hr />
-<h3 id="operadores-logicos">Operadores lógicos</h3>
-<p>Se utilizan para <strong>combinar condiciones</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<h2 id="2-validar-expresiones-regulares-con-javascript">📌 2. Validar expresiones regulares con JavaScript</h2>
+<p>Para tener un control más preciso, JavaScript permite usar expresiones regulares mediante el <strong>objeto <code>RegExp</code></strong> o con <strong>literales</strong> entre <code>/ /</code>.</p>
+<h3 id="ejemplo-basico">Ejemplo básico</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patron</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[A-Za-z0-9]+$/</span><span class="p">;</span><span class="w"> </span><span class="c1">// Literal de expresión regular</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">texto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Proficientes2025&quot;</span><span class="p">;</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (AND)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true  (OR)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span><span class="w">     </span><span class="c1">// false (NOT)</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">patron</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">texto</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;✅ Texto válido&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;❌ Texto no válido&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
+<ul>
+<li><code>.test(cadena)</code> → devuelve <code>true</code> o <code>false</code> según coincida o no.</li>
+<li>Los símbolos <code>^</code> y <code>$</code> indican el <strong>inicio y fin de la cadena</strong>, asegurando que toda la cadena cumpla el patrón.</li>
+</ul>
 <hr />
-<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<p>Sirven para comparar valores:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">   </span><span class="c1">// true  (igualdad con conversión implícita)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// false (igualdad estricta, también compara el tipo)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">4</span><span class="w">     </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">      </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="w">     </span><span class="c1">// true</span>
+<h3 id="ejemplo-con-un-formulario">Ejemplo con un formulario</h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;formulario&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>Teléfono:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;telefono&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Ej: 612345678&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Validar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;formulario&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">tel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;telefono&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">patron</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[6-9][0-9]{8}$/</span><span class="p">;</span><span class="w"> </span><span class="c1">// Empieza por 6-9 y tiene 9 dígitos</span>
+
+<span class="w">  </span><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;submit&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">patron</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">tel</span><span class="p">.</span><span class="nx">value</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;✅ Teléfono válido&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;❌ Teléfono incorrecto&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Conversión implícita de tipos</p>
-<p>En JavaScript, el operador <code>==</code> intenta <strong>convertir los valores a un mismo tipo</strong> antes de compararlos.
-Por eso <code>5 == "5"</code> devuelve <code>true</code>, porque el string <code>"5"</code> se convierte a número automáticamente.
-Esto puede causar resultados inesperados, como:
-<code>js
-    0 == false   // true
-    "" == false  // true
-    null == undefined // true</code>
-Por este motivo se recomienda usar siempre <strong><code>===</code> y <code>!==</code></strong>, que comparan tanto el valor como el tipo.</p>
+<p class="admonition-title">Ventaja del uso en JavaScript</p>
+<p>Usar <code>.test()</code> permite validar en tiempo real, controlar los mensajes y adaptar las reglas dinámicamente (por ejemplo, si cambian los requisitos del formato).</p>
 </div>
 <hr />
-<h3 id="operador-ternario">Operador ternario</h3>
-<p>Permite escribir una condición en una sola línea:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Eres mayor de edad&quot;</span>
-</code></pre></div>
-<p>Equivale a escribir:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="p">;</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<h2 id="3-elementos-de-una-expresion-regular">📌 3. Elementos de una expresión regular</h2>
+<p>Las expresiones regulares se construyen combinando <strong>caracteres especiales</strong> y <strong>símbolos</strong> que indican el tipo de coincidencia.
+A continuación tienes los más importantes:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Símbolo</th>
+<th>Significado</th>
+<th>Ejemplo</th>
+<th>Coincide con</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anclas</strong></td>
+<td><code>^</code> / <code>$</code></td>
+<td>Inicio / fin de cadena</td>
+<td><code>^abc$</code></td>
+<td>Solo "abc"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Clases de caracteres</strong></td>
+<td><code>[abc]</code></td>
+<td>Uno de esos caracteres</td>
+<td><code>[abc]</code></td>
+<td>"a", "b" o "c"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>[^abc]</code></td>
+<td>Cualquier carácter excepto esos</td>
+<td><code>[^0-9]</code></td>
+<td>No numérico</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Rangos</strong></td>
+<td><code>[a-z]</code></td>
+<td>Letras minúsculas</td>
+<td><code>[A-Z0-9]</code></td>
+<td>Mayúsculas o dígitos</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Cuantificadores</strong></td>
+<td><code>*</code></td>
+<td>0 o más repeticiones</td>
+<td><code>a*</code></td>
+<td>"", "a", "aa"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>+</code></td>
+<td>1 o más repeticiones</td>
+<td><code>a+</code></td>
+<td>"a", "aa"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>?</code></td>
+<td>0 o 1 repetición</td>
+<td><code>a?</code></td>
+<td>"", "a"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>{n}</code></td>
+<td>Exactamente n veces</td>
+<td><code>[0-9]{5}</code></td>
+<td>5 dígitos</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>{n,}</code></td>
+<td>Al menos n veces</td>
+<td><code>[a-z]{3,}</code></td>
+<td>3 o más letras</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>{n,m}</code></td>
+<td>Entre n y m veces</td>
+<td><code>[A-Z]{2,4}</code></td>
+<td>2 a 4 letras mayúsculas</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Grupos</strong></td>
+<td><code>(abc)</code></td>
+<td>Agrupa varios caracteres</td>
+<td><code>(ab)+</code></td>
+<td>"ab", "abab"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Alternancia</strong></td>
+<td><code>|</code></td>
+<td>O bien... o bien...</td>
+<td><code>rojo                   | azul</code></td>
+<td>"rojo" o "azul"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Metacaracteres</strong></td>
+<td><code>.</code></td>
+<td>Cualquier carácter</td>
+<td><code>a.b</code></td>
+<td>"acb", "a-b", etc.</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>\d</code></td>
+<td>Dígito (<code>[0-9]</code>)</td>
+<td><code>\d{3}</code></td>
+<td>"123"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>\w</code></td>
+<td>Letra o número (<code>[A-Za-z0-9_]</code>)</td>
+<td><code>\w+</code></td>
+<td>"abc123"</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>\s</code></td>
+<td>Espacio o tabulación</td>
+<td><code>\s+</code></td>
+<td>"   "</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><code>\D</code>, <code>\W</code>, <code>\S</code></td>
+<td>Negaciones de los anteriores</td>
+<td><code>\D+</code></td>
+<td>No numérico</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-ejemplos-practicos-de-validacion-con-expresiones-regulares">📌 4. Ejemplos prácticos de validación con expresiones regulares</h2>
+<h3 id="validar-un-nombre-solo-letras-y-espacios">🔹 Validar un nombre (solo letras y espacios)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronNombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/</span><span class="p">;</span>
+<span class="nx">patronNombre</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;Laura Pérez&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronNombre</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;Laura_2025&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// false</span>
 </code></pre></div>
 <hr />
-<h3 id="operadores-de-cadena">Operadores de cadena</h3>
-<p>Se utilizan para <strong>trabajar con strings</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span><span class="w">          </span><span class="c1">// concatenación clásica</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">, ¿qué tal?`</span><span class="p">;</span><span class="w"> </span><span class="c1">// plantilla literal con backticks</span>
+<h3 id="validar-un-correo-electronico-version-basica">🔹 Validar un correo electrónico (versión básica)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronCorreo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i</span><span class="p">;</span>
+<span class="nx">patronCorreo</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;usuario@dominio.com&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronCorreo</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;usuario@@com&quot;</span><span class="p">);</span><span class="w">        </span><span class="c1">// false</span>
 </code></pre></div>
 <hr />
-<h2 id="plantillas-literales-template-literals">📌 Plantillas literales (template literals)</h2>
-<p>Las <strong>plantillas literales</strong> se escriben entre <strong>backticks</strong> (<code>`</code>) y ofrecen más flexibilidad que las comillas simples o dobles.</p>
-<h3 id="ventajas-principales">Ventajas principales:</h3>
-<ol>
-<li><strong>Interpolación de variables</strong> con <code>${variable}</code>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hola Laura</span>
-</code></pre></div>
-<ol>
-<li><strong>Expresiones dentro de <code>${}</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`La suma es </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// La suma es 8</span>
-</code></pre></div>
-<ol>
-<li><strong>Texto multilínea sin necesidad de <code>\n</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
-<span class="sb">Línea 1</span>
-<span class="sb">Línea 2</span>
-<span class="sb">Línea 3</span>
-<span class="sb">`</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<h3 id="validar-una-contrasena-segura">🔹 Validar una contraseña segura</h3>
+<p>Debe tener al menos <strong>8 caracteres</strong>, una <strong>mayúscula</strong>, una <strong>minúscula</strong>, un <strong>número</strong> y un <strong>símbolo especial</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronClave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&amp;*]).{8,}$/</span><span class="p">;</span>
+<span class="nx">patronClave</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;Abcde123!&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronClave</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;abcd1234&quot;</span><span class="p">);</span><span class="w">  </span><span class="c1">// false</span>
 </code></pre></div>
 <hr />
-<h2 id="operadores-rest-y-spread">📌 Operadores rest y spread (<code>...</code>)</h2>
-<p>El operador <code>...</code> en JavaScript puede funcionar de <strong>dos formas diferentes</strong> según el contexto:</p>
-<hr />
-<h3 id="spread-propagacion">Spread (propagación)</h3>
-<p>Permite <strong>expandir</strong> un array o un objeto en sus elementos individuales.<br />
-Es muy útil para copiar, combinar o pasar elementos como argumentos de una función.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo con arrays</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
-
-<span class="c1">// Ejemplo con objetos</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">persona</span><span class="p">,</span><span class="w"> </span><span class="nx">profesion</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Desarrolladora&quot;</span><span class="w"> </span><span class="p">};</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copia</span><span class="p">);</span><span class="w"> </span><span class="c1">// { nombre: &quot;Laura&quot;, edad: 30, profesion: &quot;Desarrolladora&quot; }</span>
-</code></pre></div>
-<h3 id="rest-agrupacion">Rest (agrupación)</h3>
-<p>Permite <strong>agrupar</strong> múltiples elementos en un array dentro de funciones o estructuras de datos.
-Se usa normalmente en la definición de funciones para recibir un número indefinido de argumentos.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo en funciones</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(...</span><span class="nx">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">numeros</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumar</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">));</span><span class="w"> </span><span class="c1">// 10</span>
-
-<span class="c1">// Ejemplo con destructuring</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">primero</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">resto</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primero</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resto</span><span class="p">);</span><span class="w">   </span><span class="c1">// [20, 30, 40]</span>
+<h3 id="validar-un-codigo-postal-espana">🔹 Validar un código postal (España)</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronCP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^(0[1-9]|[1-4][0-9]|5[0-2])[0-9]{3}$/</span><span class="p">;</span>
+<span class="nx">patronCP</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;39002&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true (Cantabria)</span>
+<span class="nx">patronCP</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;99000&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
 </code></pre></div>
 <hr />
-<div class="admonition tip">
-<p class="admonition-title">Recuerda</p>
-<p><strong>Spread</strong> → "expande" elementos.</p>
-<p><strong>Rest</strong> → "agrupa" elementos.</p>
+<h3 id="validar-una-matricula-espanola-moderna">🔹 Validar una matrícula española moderna</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronMatricula</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^\d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}$/</span><span class="p">;</span>
+<span class="nx">patronMatricula</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;1234 BCD&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronMatricula</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;12AB&quot;</span><span class="p">);</span><span class="w">     </span><span class="c1">// false</span>
+</code></pre></div>
+<hr />
+<h3 id="validar-una-fecha-en-formato-ddmmaaaa">🔹 Validar una fecha en formato dd/mm/aaaa</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronFecha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/</span><span class="p">;</span>
+<span class="nx">patronFecha</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;13/10/2025&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronFecha</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;32/01/2025&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<hr />
+<h3 id="validar-un-numero-decimal">🔹 Validar un número decimal</h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">patronDecimal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sr">/^\d+(\.\d{1,2})?$/</span><span class="p">;</span>
+<span class="nx">patronDecimal</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;12.34&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// true</span>
+<span class="nx">patronDecimal</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&quot;12.345&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// false</span>
+</code></pre></div>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">Evita expresiones demasiado complejas</p>
+<p>Aunque las expresiones regulares son potentes, pueden volverse difíciles de leer y mantener.
+Usa <strong>nombres descriptivos</strong>, <strong>comentarios</strong> y <strong>validaciones adicionales</strong> si el formato es muy específico.</p>
 </div>
+<hr />
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué operador devuelve el resto de una división?</li>
-<li>¿Por qué es más seguro usar <code>===</code> en lugar de <code>==</code>?</li>
-<li>¿A qué equivale el operador ternario en su forma larga con <code>if</code> y <code>else</code>?</li>
-<li>¿Cómo escribirías una plantilla literal que muestre un cálculo dentro de <code>${}</code>?</li>
-<li>¿Qué ventaja tienen las plantillas literales frente a la concatenación clásica con <code>+</code>?</li>
+<li>¿Qué atributo HTML permite usar expresiones regulares en un formulario?</li>
+<li>¿Qué diferencia hay entre <code>test()</code> y <code>pattern</code>?</li>
+<li>¿Qué significan los símbolos <code>^</code> y <code>$</code> en una expresión regular?</li>
+<li>¿Qué patrón podrías usar para aceptar solo letras y espacios?</li>
+<li>¿Cómo validarías un número de teléfono español que empiece por 6, 7, 8 o 9 y tenga 9 dígitos?</li>
 </ol>
 </div>
 

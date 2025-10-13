@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../01-03-variables/">
+        <link rel="prev" href="../04-03-01-webstorage/">
       
       
-        <link rel="next" href="../01-05-01-condicionales/">
+        <link rel="next" href="../../05-dom/05-01-acceso-modificacion/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>1.4 Operadores - CIFP Txurdinaga LHII - DWC - Javascript</title>
+        <title>4.3.2 IndexedDB - CIFP Txurdinaga LHII - DWC - Javascript</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#14-operadores-en-javascript" class="md-skip">
+        <a href="#432-indexeddb-almacenamiento-avanzado-en-el-navegador" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.4 Operadores
+              4.3.2 IndexedDB
             
           </span>
         </div>
@@ -255,10 +255,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -287,11 +285,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -307,7 +307,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             1. Conceptos Básicos
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-introduccion/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-introduccion/" class="md-nav__link">
         
   
   
@@ -344,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-00-01-primer-ejemplo/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-00-01-primer-ejemplo/" class="md-nav__link">
         
   
   
@@ -367,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-01-javascript-en-html/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-01-javascript-en-html/" class="md-nav__link">
         
   
   
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-02-entradas-salidas/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-02-entradas-salidas/" class="md-nav__link">
         
   
   
@@ -413,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-03-variables/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-03-variables/" class="md-nav__link">
         
   
   
@@ -433,32 +433,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    1.4 Operadores
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-conceptos-basicos/01-04-operadores/" class="md-nav__link">
         
   
   
@@ -469,152 +447,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rest (agrupación)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preguntas-de-repaso" class="md-nav__link">
-    <span class="md-ellipsis">
-      📝 Preguntas de repaso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -679,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-01-condicionales/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-01-condicionales/" class="md-nav__link">
         
   
   
@@ -702,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-02-bucles-basicos/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-02-bucles-basicos/" class="md-nav__link">
         
   
   
@@ -725,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-03-bucles-avanzados/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-03-bucles-avanzados/" class="md-nav__link">
         
   
   
@@ -748,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-05-04-break-continue/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-05-04-break-continue/" class="md-nav__link">
         
   
   
@@ -779,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-06-ejercicio-trivial/" class="md-nav__link">
+      <a href="../../01-conceptos-basicos/01-06-ejercicio-trivial/" class="md-nav__link">
         
   
   
@@ -1784,8 +1616,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1812,13 +1646,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1834,7 +1666,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             4. Eventos, formularios y almacenamiento
@@ -1848,7 +1680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-01-eventos/" class="md-nav__link">
+      <a href="../04-01-eventos/" class="md-nav__link">
         
   
   
@@ -1871,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-01-validacion-html5/" class="md-nav__link">
+      <a href="../04-02-01-validacion-html5/" class="md-nav__link">
         
   
   
@@ -1894,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-02-validacion-javascript/" class="md-nav__link">
+      <a href="../04-02-02-validacion-javascript/" class="md-nav__link">
         
   
   
@@ -1917,7 +1749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-03-validacion-avanzada/" class="md-nav__link">
+      <a href="../04-02-03-validacion-avanzada/" class="md-nav__link">
         
   
   
@@ -1940,7 +1772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-02-04-expresiones-regulares/" class="md-nav__link">
+      <a href="../04-02-04-expresiones-regulares/" class="md-nav__link">
         
   
   
@@ -1963,7 +1795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-01-webstorage/" class="md-nav__link">
+      <a href="../04-03-01-webstorage/" class="md-nav__link">
         
   
   
@@ -1983,10 +1815,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../04-eventos-formularios-almacenamiento/04-03-02-indexeddb/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    4.3.2 IndexedDB
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1997,6 +1851,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-indexeddb" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Qué es IndexedDB?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apertura-o-creacion-de-una-base-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Apertura o creación de una base de datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-almacen-de-objetos-object-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Crear un almacén de objetos (object store)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insertar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Insertar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leer-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Leer datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-y-eliminar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Actualizar y eliminar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo completo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexeddb-vs-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 IndexedDB vs localStorage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Preguntas de repaso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2244,119 +2199,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-operadores-en-javascript" class="md-nav__link">
+  <a href="#que-es-indexeddb" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Tipos de operadores en JavaScript
+      📌 ¿Qué es IndexedDB?
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Tipos de operadores en JavaScript">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-asignacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de asignación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-logicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores lógicos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-comparacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de comparación
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operador-ternario" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operador ternario
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#operadores-de-cadena" class="md-nav__link">
-    <span class="md-ellipsis">
-      Operadores de cadena
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plantillas-literales-template-literals" class="md-nav__link">
+  <a href="#apertura-o-creacion-de-una-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Plantillas literales (template literals)
+      📌 Apertura o creación de una base de datos
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="📌 Plantillas literales (template literals)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ventajas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ventajas principales:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#operadores-rest-y-spread" class="md-nav__link">
+  <a href="#crear-un-almacen-de-objetos-object-store" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 Operadores rest y spread (...)
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📌 Operadores rest y spread (...)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#spread-propagacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Spread (propagación)
+      📌 Crear un almacén de objetos (object store)
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#rest-agrupacion" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#insertar-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Rest (agrupación)
+      📌 Insertar datos
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#leer-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Leer datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-y-eliminar-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Actualizar y eliminar datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Ejemplo completo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexeddb-vs-localstorage" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 IndexedDB vs localStorage
+    </span>
+  </a>
   
 </li>
       
@@ -2385,160 +2295,222 @@
 
 
 
-<h1 id="14-operadores-en-javascript">1.4. Operadores en JavaScript</h1>
-<p>En esta lección vamos a repasar los <strong>principales operadores de JavaScript</strong> que permiten trabajar con valores, expresiones y condiciones.  </p>
+<h1 id="432-indexeddb-almacenamiento-avanzado-en-el-navegador">4.3.2 IndexedDB: almacenamiento avanzado en el navegador</h1>
+<p>El objeto <code>IndexedDB</code> permite almacenar <strong>grandes cantidades de datos estructurados</strong> directamente en el navegador.
+A diferencia de <code>localStorage</code> o <code>sessionStorage</code>, que solo guardan texto, <strong>IndexedDB</strong> permite almacenar <strong>objetos completos</strong>, realizar <strong>búsquedas por índice</strong> y gestionar los datos de forma <strong>asíncrona</strong>.</p>
 <hr />
-<h2 id="tipos-de-operadores-en-javascript">📌 Tipos de operadores en JavaScript</h2>
-<h3 id="operadores-de-asignacion">Operadores de asignación</h3>
-<p>Sirven para <strong>dar valor a una variable</strong>.<br />
-El más común es <code>=</code>, pero también existen operadores compuestos:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w">    </span><span class="c1">// asignación</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x + 5</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span><span class="w">        </span><span class="c1">// equivalente a x = x - 2</span>
-<span class="sb">````</span>
-
-<span class="o">---</span>
-
-<span class="err">###</span><span class="w"> </span><span class="nx">Operadores</span><span class="w"> </span><span class="nx">aritméticos</span>
-
-<span class="nx">Permiten</span><span class="w"> </span><span class="nx">hacer</span><span class="w"> </span><span class="nx">operaciones</span><span class="w"> </span><span class="nx">matemáticas</span><span class="o">:</span>
-
-<span class="sb">```js</span>
-<span class="sb">let suma = 5 + 3;      // 8</span>
-<span class="sb">let resta = 10 - 4;    // 6</span>
-<span class="sb">let multi = 6 * 2;     // 12</span>
-<span class="sb">let division = 15 / 3; // 5</span>
-<span class="sb">let resto = 7 % 2;     // 1 (resto de la división)</span>
-<span class="sb">let potencia = 2 ** 3; // 8</span>
-</code></pre></div>
-<hr />
-<h3 id="operadores-logicos">Operadores lógicos</h3>
-<p>Se utilizan para <strong>combinar condiciones</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// false (AND)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="c1">// true  (OR)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">);</span><span class="w">     </span><span class="c1">// false (NOT)</span>
-</code></pre></div>
-<hr />
-<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<p>Sirven para comparar valores:</p>
-<div class="highlight"><pre><span></span><code><span class="mf">5</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">   </span><span class="c1">// true  (igualdad con conversión implícita)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// false (igualdad estricta, también compara el tipo)</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mf">4</span><span class="w">     </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="s2">&quot;5&quot;</span><span class="w">  </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">3</span><span class="w">      </span><span class="c1">// true</span>
-<span class="mf">5</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="w">     </span><span class="c1">// true</span>
-</code></pre></div>
+<h2 id="que-es-indexeddb">📌 ¿Qué es IndexedDB?</h2>
+<p><strong>IndexedDB</strong> es una base de datos orientada a objetos integrada en los navegadores.
+Permite guardar información compleja (como objetos, listas o archivos) de forma persistente y eficiente, incluso sin conexión a internet.</p>
 <div class="admonition info">
-<p class="admonition-title">Conversión implícita de tipos</p>
-<p>En JavaScript, el operador <code>==</code> intenta <strong>convertir los valores a un mismo tipo</strong> antes de compararlos.
-Por eso <code>5 == "5"</code> devuelve <code>true</code>, porque el string <code>"5"</code> se convierte a número automáticamente.
-Esto puede causar resultados inesperados, como:
-<code>js
-    0 == false   // true
-    "" == false  // true
-    null == undefined // true</code>
-Por este motivo se recomienda usar siempre <strong><code>===</code> y <code>!==</code></strong>, que comparan tanto el valor como el tipo.</p>
+<p class="admonition-title">Ventajas principales</p>
+<ul>
+<li>Permite guardar <strong>grandes volúmenes</strong> de datos (decenas de MB o más).</li>
+<li>Soporta <strong>objetos complejos</strong>, no solo texto.</li>
+<li>Es <strong>asíncrona</strong>, evitando bloquear la interfaz.</li>
+<li>Permite <strong>búsquedas e índices</strong> como una base de datos real.</li>
+<li>Los datos <strong>persisten</strong> entre sesiones.</li>
+</ul>
 </div>
 <hr />
-<h3 id="operador-ternario">Operador ternario</h3>
-<p>Permite escribir una condición en una sola línea:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Eres mayor de edad&quot;</span>
+<h2 id="apertura-o-creacion-de-una-base-de-datos">📌 Apertura o creación de una base de datos</h2>
+<p>El primer paso es abrir (o crear) una base de datos con <code>indexedDB.open()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Abrir o crear la base de datos &quot;miBD&quot; versión 1</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">indexedDB</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;miBD&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
 </code></pre></div>
-<p>Equivale a escribir:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="p">;</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">edad</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres mayor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Eres menor de edad&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<p>El método devuelve un <strong>objeto de solicitud</strong> (<code>IDBOpenDBRequest</code>) que dispara varios eventos:</p>
+<ul>
+<li><code>onupgradeneeded</code>: se ejecuta la <strong>primera vez</strong> o cuando se cambia la versión.</li>
+<li><code>onsuccess</code>: cuando la base de datos se abre correctamente.</li>
+<li><code>onerror</code>: si ocurre un error.</li>
+</ul>
+<hr />
+<h2 id="crear-un-almacen-de-objetos-object-store">📌 Crear un almacén de objetos (object store)</h2>
+<p>El <strong>almacén de objetos</strong> (<code>object store</code>) es el equivalente a una tabla.
+Se define dentro del evento <code>onupgradeneeded</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">request</span><span class="p">.</span><span class="nx">onupgradeneeded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+
+<span class="w">  </span><span class="c1">// Creamos un almacén llamado &quot;personas&quot; con clave primaria &quot;id&quot;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">createObjectStore</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">keyPath</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;id&quot;</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Almacén &#39;personas&#39; creado&quot;</span><span class="p">);</span>
+<span class="p">};</span>
 </code></pre></div>
 <hr />
-<h3 id="operadores-de-cadena">Operadores de cadena</h3>
-<p>Se utilizan para <strong>trabajar con strings</strong>:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span><span class="w">          </span><span class="c1">// concatenación clásica</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">saludo2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">, ¿qué tal?`</span><span class="p">;</span><span class="w"> </span><span class="c1">// plantilla literal con backticks</span>
+<h2 id="insertar-datos">📌 Insertar datos</h2>
+<p>Para añadir datos, se usa una <strong>transacción</strong> (<code>transaction</code>) sobre el almacén correspondiente.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">request</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">transaccion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;readwrite&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">transaccion</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// Insertar objetos</span>
+<span class="w">  </span><span class="nx">store</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">});</span>
+<span class="w">  </span><span class="nx">store</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Carlos&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">25</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Datos añadidos correctamente&quot;</span><span class="p">);</span>
+<span class="p">};</span>
 </code></pre></div>
 <hr />
-<h2 id="plantillas-literales-template-literals">📌 Plantillas literales (template literals)</h2>
-<p>Las <strong>plantillas literales</strong> se escriben entre <strong>backticks</strong> (<code>`</code>) y ofrecen más flexibilidad que las comillas simples o dobles.</p>
-<h3 id="ventajas-principales">Ventajas principales:</h3>
-<ol>
-<li><strong>Interpolación de variables</strong> con <code>${variable}</code>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hola </span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hola Laura</span>
+<h2 id="leer-datos">📌 Leer datos</h2>
+<p>Podemos obtener un elemento por su clave con <code>get()</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">solicitud</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">store</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
+
+<span class="nx">solicitud</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Resultado:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">);</span>
+<span class="p">};</span>
 </code></pre></div>
-<ol>
-<li><strong>Expresiones dentro de <code>${}</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`La suma es </span><span class="si">${</span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// La suma es 8</span>
-</code></pre></div>
-<ol>
-<li><strong>Texto multilínea sin necesidad de <code>\n</code></strong>:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span>
-<span class="sb">Línea 1</span>
-<span class="sb">Línea 2</span>
-<span class="sb">Línea 3</span>
-<span class="sb">`</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<p>O recorrer todos los registros con un <strong>cursor</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">store</span><span class="p">.</span><span class="nx">openCursor</span><span class="p">();</span>
+
+<span class="nx">cursor</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">puntero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">puntero</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;ID:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">puntero</span><span class="p">.</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Datos:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">puntero</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">puntero</span><span class="p">.</span><span class="k">continue</span><span class="p">();</span><span class="w"> </span><span class="c1">// Avanza al siguiente</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Fin del recorrido&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">};</span>
 </code></pre></div>
 <hr />
-<h2 id="operadores-rest-y-spread">📌 Operadores rest y spread (<code>...</code>)</h2>
-<p>El operador <code>...</code> en JavaScript puede funcionar de <strong>dos formas diferentes</strong> según el contexto:</p>
-<hr />
-<h3 id="spread-propagacion">Spread (propagación)</h3>
-<p>Permite <strong>expandir</strong> un array o un objeto en sus elementos individuales.<br />
-Es muy útil para copiar, combinar o pasar elementos como argumentos de una función.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo con arrays</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">];</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2</span><span class="p">);</span><span class="w"> </span><span class="c1">// [1, 2, 3, 4, 5]</span>
-
-<span class="c1">// Ejemplo con objetos</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">persona</span><span class="p">,</span><span class="w"> </span><span class="nx">profesion</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Desarrolladora&quot;</span><span class="w"> </span><span class="p">};</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">copia</span><span class="p">);</span><span class="w"> </span><span class="c1">// { nombre: &quot;Laura&quot;, edad: 30, profesion: &quot;Desarrolladora&quot; }</span>
+<h2 id="actualizar-y-eliminar-datos">📌 Actualizar y eliminar datos</h2>
+<p>Para actualizar, basta con volver a usar <code>put()</code> con el mismo <code>id</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nx">store</span><span class="p">.</span><span class="nx">put</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Laura&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">31</span><span class="w"> </span><span class="p">});</span><span class="w"> </span><span class="c1">// Actualiza edad</span>
 </code></pre></div>
-<h3 id="rest-agrupacion">Rest (agrupación)</h3>
-<p>Permite <strong>agrupar</strong> múltiples elementos en un array dentro de funciones o estructuras de datos.
-Se usa normalmente en la definición de funciones para recibir un número indefinido de argumentos.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// Ejemplo en funciones</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(...</span><span class="nx">numeros</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">numeros</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sumar</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">));</span><span class="w"> </span><span class="c1">// 10</span>
-
-<span class="c1">// Ejemplo con destructuring</span>
-<span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">primero</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">resto</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span><span class="w"> </span><span class="mf">40</span><span class="p">];</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">primero</span><span class="p">);</span><span class="w"> </span><span class="c1">// 10</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resto</span><span class="p">);</span><span class="w">   </span><span class="c1">// [20, 30, 40]</span>
+<p>Y para eliminar un registro:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">store</span><span class="p">.</span><span class="ow">delete</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// Borra la persona con id 2</span>
 </code></pre></div>
 <hr />
-<div class="admonition tip">
-<p class="admonition-title">Recuerda</p>
-<p><strong>Spread</strong> → "expande" elementos.</p>
-<p><strong>Rest</strong> → "agrupa" elementos.</p>
+<div class="admonition note">
+<p class="admonition-title">Las transacciones son obligatorias</p>
+<p>En IndexedDB <strong>todas las operaciones se realizan dentro de una transacción</strong>, que puede ser:</p>
+<ul>
+<li><code>"readonly"</code>: solo lectura.</li>
+<li><code>"readwrite"</code>: lectura y escritura.</li>
+<li><code>"versionchange"</code>: se usa solo al crear o actualizar la base de datos.</li>
+</ul>
 </div>
+<hr />
+<h2 id="ejemplo-completo">📌 Ejemplo completo</h2>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;es&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ejemplo IndexedDB<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Gestión de personas con IndexedDB<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;add&quot;</span><span class="p">&gt;</span>Añadir persona<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;show&quot;</span><span class="p">&gt;</span>Mostrar todas<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">db</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// 1️⃣ Abrimos o creamos la base de datos</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">request</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">indexedDB</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&quot;miBD&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// 2️⃣ Creamos el almacén si no existe</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">onupgradeneeded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="w">      </span><span class="nx">db</span><span class="p">.</span><span class="nx">createObjectStore</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">keyPath</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;id&quot;</span><span class="w"> </span><span class="p">});</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Almacén &#39;personas&#39; creado&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// 3️⃣ Conectamos con éxito</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">db</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Base de datos abierta correctamente&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// 4️⃣ Manejamos errores</span>
+<span class="w">    </span><span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">&quot;Error al abrir la base de datos&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">e</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// Botón: añadir persona</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;add&quot;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">transaccion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;readwrite&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">transaccion</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">();</span>
+<span class="w">      </span><span class="nx">store</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Usuario &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">40</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">20</span><span class="w"> </span><span class="p">});</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Persona añadida&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+
+<span class="w">    </span><span class="c1">// Botón: mostrar todas las personas</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;show&quot;</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">transaccion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">db</span><span class="p">.</span><span class="nx">transaction</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;readonly&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">transaccion</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="s2">&quot;personas&quot;</span><span class="p">);</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">store</span><span class="p">.</span><span class="nx">openCursor</span><span class="p">();</span>
+
+<span class="w">      </span><span class="nx">cursor</span><span class="p">.</span><span class="nx">onsuccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">puntero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">puntero</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">puntero</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+<span class="w">          </span><span class="nx">puntero</span><span class="p">.</span><span class="k">continue</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Fin de los registros&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">};</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<hr />
+<h2 id="indexeddb-vs-localstorage">📌 IndexedDB vs localStorage</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>IndexedDB</th>
+<th>localStorage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo de datos</td>
+<td>Objetos, arrays, binarios</td>
+<td>Solo texto</td>
+</tr>
+<tr>
+<td>Capacidad</td>
+<td>Muy alta (MB o más)</td>
+<td>Limitada (5–10 MB)</td>
+</tr>
+<tr>
+<td>Asincronía</td>
+<td>✅ Asíncrono</td>
+<td>❌ Síncrono</td>
+</tr>
+<tr>
+<td>Rendimiento</td>
+<td>Alto</td>
+<td>Medio</td>
+</tr>
+<tr>
+<td>Estructura</td>
+<td>Base de datos con índices</td>
+<td>Clave–valor simple</td>
+</tr>
+<tr>
+<td>Ideal para...</td>
+<td>Aplicaciones complejas (PWA, catálogos, etc.)</td>
+<td>Preferencias o datos simples</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="preguntas-de-repaso">📝 Preguntas de repaso</h2>
 <div class="admonition question">
 <p class="admonition-title">Reflexiona sobre lo aprendido</p>
 <ol>
-<li>¿Qué operador devuelve el resto de una división?</li>
-<li>¿Por qué es más seguro usar <code>===</code> en lugar de <code>==</code>?</li>
-<li>¿A qué equivale el operador ternario en su forma larga con <code>if</code> y <code>else</code>?</li>
-<li>¿Cómo escribirías una plantilla literal que muestre un cálculo dentro de <code>${}</code>?</li>
-<li>¿Qué ventaja tienen las plantillas literales frente a la concatenación clásica con <code>+</code>?</li>
+<li>¿Qué diferencia principal hay entre IndexedDB y localStorage?</li>
+<li>¿Qué es un <em>object store</em> y qué papel cumple?</li>
+<li>¿Qué hace el evento <code>onupgradeneeded</code>?</li>
+<li>¿Por qué IndexedDB funciona de forma asíncrona?</li>
+<li>¿Qué tipo de transacción se necesita para modificar datos?</li>
 </ol>
 </div>
 
