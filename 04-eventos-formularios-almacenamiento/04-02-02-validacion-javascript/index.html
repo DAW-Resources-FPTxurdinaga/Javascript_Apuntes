@@ -2304,50 +2304,50 @@ Si algún campo no cumple las condiciones, se puede <strong>bloquear el envío</
 </ul>
 </div>
 <hr />
-<h2 id="personalizar-y-mostrar-mensajes-con-setcustomvalidity-y-reportvalidity">📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()</h2>
-<p>Podemos sobrescribir los mensajes del navegador con setCustomValidity() y, a continuación, mostrarlos directamente usando reportValidity().</p>
-<p>Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de enviar el formulario.</p>
-<div class="highlight"><pre><span></span><code>&lt;form id=&quot;registro&quot; novalidate&gt;
-  &lt;input type=&quot;number&quot; id=&quot;edad&quot; required min=&quot;18&quot; max=&quot;99&quot; placeholder=&quot;Edad (18–99)&quot;&gt;
-  &lt;button type=&quot;button&quot; id=&quot;comprobar&quot;&gt;Comprobar&lt;/button&gt;
-&lt;/form&gt;
+<h2 id="personalizar-y-mostrar-mensajes-con-setcustomvalidity-y-reportvalidity">📌 Personalizar y mostrar mensajes con <code>setCustomValidity()</code> y <code>reportValidity()</code></h2>
+<p>Podemos sobrescribir los mensajes del navegador con <code>setCustomValidity()</code> y, a continuación, mostrarlos directamente usando <code>reportValidity()</code>.</p>
+<p>Esto nos permite ofrecer una validación <strong>completa e inmediata</strong>, sin necesidad de enviar el formulario.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;registro&quot;</span> <span class="na">novalidate</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;edad&quot;</span> <span class="na">required</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;18&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;99&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Edad (18–99)&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;comprobar&quot;</span><span class="p">&gt;</span>Comprobar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 
-&lt;script&gt;
-  const edad = document.getElementById(&quot;edad&quot;);
-  const boton = document.getElementById(&quot;comprobar&quot;);
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;edad&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">boton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;comprobar&quot;</span><span class="p">);</span>
 
-  function validarCampo(idCampo) {
-    const input = document.getElementById(idCampo);
-    const validez = input.validity;
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">validarCampo</span><span class="p">(</span><span class="nx">idCampo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">idCampo</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">validez</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">validity</span><span class="p">;</span>
 
-    // Limpiamos siempre el mensaje previo
-    input.setCustomValidity(&quot;&quot;);
+<span class="w">    </span><span class="c1">// Limpiamos siempre el mensaje previo</span>
+<span class="w">    </span><span class="nx">input</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
 
-    if (validez.valueMissing) {
-      input.setCustomValidity(&quot;Este campo es obligatorio&quot;);
-    } else if (validez.rangeUnderflow) {
-      input.setCustomValidity(&quot;La edad debe ser mayor o igual a 18&quot;);
-    } else if (validez.rangeOverflow) {
-      input.setCustomValidity(&quot;La edad debe ser menor o igual a 99&quot;);
-    }
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">validez</span><span class="p">.</span><span class="nx">valueMissing</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">input</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;Este campo es obligatorio&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">validez</span><span class="p">.</span><span class="nx">rangeUnderflow</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">input</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;La edad debe ser mayor o igual a 18&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">validez</span><span class="p">.</span><span class="nx">rangeOverflow</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">input</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;La edad debe ser menor o igual a 99&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 
-    // Mostramos el mensaje si hay algún error
-    input.reportValidity();
-  }
+<span class="w">    </span><span class="c1">// Mostramos el mensaje si hay algún error</span>
+<span class="w">    </span><span class="nx">input</span><span class="p">.</span><span class="nx">reportValidity</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
 
-  boton.addEventListener(&quot;click&quot;, () =&gt; validarCampo(&quot;edad&quot;));
-&lt;/script&gt;
+<span class="w">  </span><span class="nx">boton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">validarCampo</span><span class="p">(</span><span class="s2">&quot;edad&quot;</span><span class="p">));</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
 <div class="admonition info">
-<p class="admonition-title">Cuándo usar reportValidity()</p>
-<p>reportValidity() es ideal para mostrar los mensajes sin enviar el formulario:
+<p class="admonition-title">Cuándo usar <code>reportValidity()</code></p>
+<p><code>reportValidity()</code> es ideal para mostrar los mensajes <strong>sin enviar el formulario</strong>:
 - Al pulsar un botón “Comprobar” o “Verificar”.
-- Al abandonar un campo (blur).
-- O cuando queremos validar un solo campo dentro de un formulario grande.</p>
+- Al abandonar un campo (<code>blur</code>).
+- O cuando queremos validar <strong>un solo campo</strong> dentro de un formulario grande.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Consejo práctico</p>
-<p>Siempre que uses setCustomValidity(), recuerda limpiar el mensaje anterior con setCustomValidity("").
+<p>Siempre que uses <code>setCustomValidity()</code>, recuerda <strong>limpiar el mensaje anterior</strong> con <code>setCustomValidity("")</code>.
 Si no lo haces, el campo seguirá marcado como inválido incluso después de corregir el error.</p>
 </div>
 <hr />
