@@ -53,12 +53,13 @@ Si algún campo no cumple las condiciones, se puede **bloquear el envío** con `
 
 ---
 
-📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()
+## 📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()
 
 Podemos sobrescribir los mensajes del navegador con setCustomValidity() y, a continuación, mostrarlos directamente usando reportValidity().
 
 Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de enviar el formulario.
 
+```
 <form id="registro" novalidate>
   <input type="number" id="edad" required min="18" max="99" placeholder="Edad (18–99)">
   <button type="button" id="comprobar">Comprobar</button>
@@ -89,7 +90,7 @@ Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de 
 
   boton.addEventListener("click", () => validarCampo("edad"));
 </script>
-
+```
 
 !!! info "Cuándo usar reportValidity()"
     reportValidity() es ideal para mostrar los mensajes sin enviar el formulario:
