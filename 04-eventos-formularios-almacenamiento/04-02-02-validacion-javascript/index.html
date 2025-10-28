@@ -1794,6 +1794,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#personalizar-y-mostrar-mensajes-con-setcustomvalidity-y-reportvalidity" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#el-objeto-validity" class="md-nav__link">
     <span class="md-ellipsis">
       📌 El objeto validity
@@ -2190,6 +2199,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#personalizar-y-mostrar-mensajes-con-setcustomvalidity-y-reportvalidity" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#el-objeto-validity" class="md-nav__link">
     <span class="md-ellipsis">
       📌 El objeto validity
@@ -2286,40 +2304,40 @@ Si algún campo no cumple las condiciones, se puede <strong>bloquear el envío</
 </ul>
 </div>
 <hr />
-<p>📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()</p>
+<h2 id="personalizar-y-mostrar-mensajes-con-setcustomvalidity-y-reportvalidity">📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()</h2>
 <p>Podemos sobrescribir los mensajes del navegador con setCustomValidity() y, a continuación, mostrarlos directamente usando reportValidity().</p>
 <p>Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de enviar el formulario.</p>
-<form id="registro" novalidate>
-  <input type="number" id="edad" required min="18" max="99" placeholder="Edad (18–99)">
-  <button type="button" id="comprobar">Comprobar</button>
-</form>
+<div class="highlight"><pre><span></span><code>&lt;form id=&quot;registro&quot; novalidate&gt;
+  &lt;input type=&quot;number&quot; id=&quot;edad&quot; required min=&quot;18&quot; max=&quot;99&quot; placeholder=&quot;Edad (18–99)&quot;&gt;
+  &lt;button type=&quot;button&quot; id=&quot;comprobar&quot;&gt;Comprobar&lt;/button&gt;
+&lt;/form&gt;
 
-<script>
-  const edad = document.getElementById("edad");
-  const boton = document.getElementById("comprobar");
+&lt;script&gt;
+  const edad = document.getElementById(&quot;edad&quot;);
+  const boton = document.getElementById(&quot;comprobar&quot;);
 
   function validarCampo(idCampo) {
     const input = document.getElementById(idCampo);
     const validez = input.validity;
 
     // Limpiamos siempre el mensaje previo
-    input.setCustomValidity("");
+    input.setCustomValidity(&quot;&quot;);
 
     if (validez.valueMissing) {
-      input.setCustomValidity("Este campo es obligatorio");
+      input.setCustomValidity(&quot;Este campo es obligatorio&quot;);
     } else if (validez.rangeUnderflow) {
-      input.setCustomValidity("La edad debe ser mayor o igual a 18");
+      input.setCustomValidity(&quot;La edad debe ser mayor o igual a 18&quot;);
     } else if (validez.rangeOverflow) {
-      input.setCustomValidity("La edad debe ser menor o igual a 99");
+      input.setCustomValidity(&quot;La edad debe ser menor o igual a 99&quot;);
     }
 
     // Mostramos el mensaje si hay algún error
     input.reportValidity();
   }
 
-  boton.addEventListener("click", () => validarCampo("edad"));
-</script>
-
+  boton.addEventListener(&quot;click&quot;, () =&gt; validarCampo(&quot;edad&quot;));
+&lt;/script&gt;
+</code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Cuándo usar reportValidity()</p>
 <p>reportValidity() es ideal para mostrar los mensajes sin enviar el formulario:
