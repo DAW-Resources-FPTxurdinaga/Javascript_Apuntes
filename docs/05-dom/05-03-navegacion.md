@@ -39,7 +39,7 @@ console.log(lista.lastElementChild);  // Último hijo
 
 !!! note "children vs childNodes"
     - `children` devuelve **solo elementos HTML**.
-    - `childNodes` incluye **también nodos de texto y comentarios** (por ejemplo, saltos de línea).
+    - `childNodes` incluye **también nodos de texto y comentarios** (por ejemplo, ANsaltos de línea).
 
 ### Padre
 

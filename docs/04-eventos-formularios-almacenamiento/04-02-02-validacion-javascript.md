@@ -53,29 +53,52 @@ Si algún campo no cumple las condiciones, se puede **bloquear el envío** con `
 
 ---
 
-## 📌 Personalizar mensajes con `setCustomValidity()`
+📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()
 
-Podemos sobrescribir los mensajes del navegador y mostrar los nuestros con `setCustomValidity()`.
+Podemos sobrescribir los mensajes del navegador con setCustomValidity() y, a continuación, mostrarlos directamente usando reportValidity().
 
-```html
-<input type="password" id="clave" required minlength="6" placeholder="Contraseña">
+Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de enviar el formulario.
+
+<form id="registro" novalidate>
+  <input type="number" id="edad" required min="18" max="99" placeholder="Edad (18–99)">
+  <button type="button" id="comprobar">Comprobar</button>
+</form>
 
 <script>
-  const clave = document.getElementById("clave");
+  const edad = document.getElementById("edad");
+  const boton = document.getElementById("comprobar");
 
-  clave.addEventListener("input", () => {
-    // Siempre limpiamos el mensaje antes de volver a comprobar
-    clave.setCustomValidity("");
+  function validarCampo(idCampo) {
+    const input = document.getElementById(idCampo);
+    const validez = input.validity;
 
-    if (clave.validity.tooShort) {
-      clave.setCustomValidity("La contraseña debe tener al menos 6 caracteres");
+    // Limpiamos siempre el mensaje previo
+    input.setCustomValidity("");
+
+    if (validez.valueMissing) {
+      input.setCustomValidity("Este campo es obligatorio");
+    } else if (validez.rangeUnderflow) {
+      input.setCustomValidity("La edad debe ser mayor o igual a 18");
+    } else if (validez.rangeOverflow) {
+      input.setCustomValidity("La edad debe ser menor o igual a 99");
     }
-  });
+
+    // Mostramos el mensaje si hay algún error
+    input.reportValidity();
+  }
+
+  boton.addEventListener("click", () => validarCampo("edad"));
 </script>
-```
+
+
+!!! info "Cuándo usar reportValidity()"
+    reportValidity() es ideal para mostrar los mensajes sin enviar el formulario:
+    - Al pulsar un botón “Comprobar” o “Verificar”.
+    - Al abandonar un campo (blur).
+    - O cuando queremos validar un solo campo dentro de un formulario grande.
 
 !!! note "Consejo práctico"
-    Siempre que uses `setCustomValidity()`, recuerda **limpiar el mensaje anterior** con `setCustomValidity("")`.
+    Siempre que uses setCustomValidity(), recuerda limpiar el mensaje anterior con setCustomValidity("").
     Si no lo haces, el campo seguirá marcado como inválido incluso después de corregir el error.
 
 ---

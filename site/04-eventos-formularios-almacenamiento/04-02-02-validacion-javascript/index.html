@@ -1794,15 +1794,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#personalizar-mensajes-con-setcustomvalidity" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Personalizar mensajes con setCustomValidity()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#el-objeto-validity" class="md-nav__link">
     <span class="md-ellipsis">
       📌 El objeto validity
@@ -2199,15 +2190,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#personalizar-mensajes-con-setcustomvalidity" class="md-nav__link">
-    <span class="md-ellipsis">
-      📌 Personalizar mensajes con setCustomValidity()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#el-objeto-validity" class="md-nav__link">
     <span class="md-ellipsis">
       📌 El objeto validity
@@ -2304,26 +2286,50 @@ Si algún campo no cumple las condiciones, se puede <strong>bloquear el envío</
 </ul>
 </div>
 <hr />
-<h2 id="personalizar-mensajes-con-setcustomvalidity">📌 Personalizar mensajes con <code>setCustomValidity()</code></h2>
-<p>Podemos sobrescribir los mensajes del navegador y mostrar los nuestros con <code>setCustomValidity()</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;clave&quot;</span> <span class="na">required</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&quot;6&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Contraseña&quot;</span><span class="p">&gt;</span>
+<p>📌 Personalizar y mostrar mensajes con setCustomValidity() y reportValidity()</p>
+<p>Podemos sobrescribir los mensajes del navegador con setCustomValidity() y, a continuación, mostrarlos directamente usando reportValidity().</p>
+<p>Esto nos permite ofrecer una validación completa e inmediata, sin necesidad de enviar el formulario.</p>
+<form id="registro" novalidate>
+  <input type="number" id="edad" required min="18" max="99" placeholder="Edad (18–99)">
+  <button type="button" id="comprobar">Comprobar</button>
+</form>
 
-<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">clave</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;clave&quot;</span><span class="p">);</span>
+<script>
+  const edad = document.getElementById("edad");
+  const boton = document.getElementById("comprobar");
 
-<span class="w">  </span><span class="nx">clave</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;input&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Siempre limpiamos el mensaje antes de volver a comprobar</span>
-<span class="w">    </span><span class="nx">clave</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+  function validarCampo(idCampo) {
+    const input = document.getElementById(idCampo);
+    const validez = input.validity;
 
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">clave</span><span class="p">.</span><span class="nx">validity</span><span class="p">.</span><span class="nx">tooShort</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">clave</span><span class="p">.</span><span class="nx">setCustomValidity</span><span class="p">(</span><span class="s2">&quot;La contraseña debe tener al menos 6 caracteres&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">});</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
+    // Limpiamos siempre el mensaje previo
+    input.setCustomValidity("");
+
+    if (validez.valueMissing) {
+      input.setCustomValidity("Este campo es obligatorio");
+    } else if (validez.rangeUnderflow) {
+      input.setCustomValidity("La edad debe ser mayor o igual a 18");
+    } else if (validez.rangeOverflow) {
+      input.setCustomValidity("La edad debe ser menor o igual a 99");
+    }
+
+    // Mostramos el mensaje si hay algún error
+    input.reportValidity();
+  }
+
+  boton.addEventListener("click", () => validarCampo("edad"));
+</script>
+
+<div class="admonition info">
+<p class="admonition-title">Cuándo usar reportValidity()</p>
+<p>reportValidity() es ideal para mostrar los mensajes sin enviar el formulario:
+- Al pulsar un botón “Comprobar” o “Verificar”.
+- Al abandonar un campo (blur).
+- O cuando queremos validar un solo campo dentro de un formulario grande.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Consejo práctico</p>
-<p>Siempre que uses <code>setCustomValidity()</code>, recuerda <strong>limpiar el mensaje anterior</strong> con <code>setCustomValidity("")</code>.
+<p>Siempre que uses setCustomValidity(), recuerda limpiar el mensaje anterior con setCustomValidity("").
 Si no lo haces, el campo seguirá marcado como inválido incluso después de corregir el error.</p>
 </div>
 <hr />
