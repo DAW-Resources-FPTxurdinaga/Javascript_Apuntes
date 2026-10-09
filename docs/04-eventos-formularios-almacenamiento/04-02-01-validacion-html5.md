@@ -64,6 +64,24 @@ Por ejemplo, el siguiente campo solo acepta letras sin acentos ni espacios:
 
 ---
 
+## 📌 ¿Qué atributo sirve para cada campo?
+
+No todos los atributos funcionan en todos los tipos de campo. Si pones un atributo en un campo que no lo admite, el navegador simplemente **lo ignora**, sin mostrar ningún error.
+
+| Campo | `required` | `minlength` / `maxlength` | `pattern` | `min` / `max` / `step` |
+|-------|:----------:|:-------------------------:|:---------:|:----------------------:|
+| `text`, `email`, `url`, `tel`, `password` | ✅ | ✅ | ✅ | ❌ |
+| `number`, `range` | ✅ (`range` no) | ❌ | ❌ | ✅ |
+| `date`, `time` | ✅ | ❌ | ❌ | ✅ |
+| `checkbox`, `radio` | ✅ | ❌ | ❌ | ❌ |
+| `file` | ✅ | ❌ | ❌ | ❌ |
+| `textarea` | ✅ | ✅ | ❌ | ❌ |
+| `select` | ✅ | ❌ | ❌ | ❌ |
+
+Veremos cómo validar los checkboxes, radios, desplegables, áreas de texto y fechas en el apartado 4.2.5.
+
+---
+
 ## 📌 Validación automática en los navegadores
 
 Cuando el usuario intenta enviar un formulario con algún campo que no cumple las reglas establecidas, el navegador muestra un mensaje como:

@@ -68,7 +68,8 @@ nav:
     - '4.2.2 Validación con Javascript': '04-eventos-formularios-almacenamiento/04-02-02-validacion-javascript.md'
     - '4.2.3 Validación avanzada': '04-eventos-formularios-almacenamiento/04-02-03-validacion-avanzada.md'
     - '4.2.4 Expresiones regulares': '04-eventos-formularios-almacenamiento/04-02-04-expresiones-regulares.md'
-    - '📝 4.2.5 Ejemplo completo de validación': '04-eventos-formularios-almacenamiento/04-02-05-ejemplo-validacion.md'
+    - '4.2.5 Validar otros tipos de campo': '04-eventos-formularios-almacenamiento/04-02-05-validar-otros-campos.md'
+    - '📝 4.2.6 Ejemplo completo de validación': '04-eventos-formularios-almacenamiento/04-02-05-ejemplo-validacion.md'
     - '4.3.1 Webstorage': '04-eventos-formularios-almacenamiento/04-03-01-webstorage.md'
     - '4.3.2 IndexedDB': '04-eventos-formularios-almacenamiento/04-03-02-indexeddb.md'
   - '5. DOM':

@@ -1,14 +1,18 @@
-# 4.2.5 Ejemplo completo: formulario de registro
+# 4.2.6 Ejemplo completo: formulario de registro
 
-En este ejemplo práctico vas a juntar todo lo visto en los apartados anteriores para validar un **formulario de registro** completo: atributos de validación de HTML5, el objeto `validity`, mensajes personalizados con `setCustomValidity()` y el control del envío con `checkValidity()` y `reportValidity()`.
+En este ejemplo práctico vas a juntar todo lo visto en los apartados anteriores para validar un **formulario de registro** completo: atributos de validación de HTML5, el objeto `validity`, mensajes personalizados con `setCustomValidity()` y el control del envío con `checkValidity()` y `reportValidity()`, aplicados a distintos tipos de campo (apartado 4.2.5).
 
-El formulario tiene tres campos:
+El formulario tiene estos campos:
 
 | Campo | Condiciones |
 |-------|-------------|
 | Usuario | Obligatorio, al menos 4 caracteres, solo letras, números y espacios |
 | Correo | Obligatorio, con formato de correo electrónico válido |
 | Edad | Obligatoria, número entero entre 18 y 99 |
+| Turno (radio) | Obligatorio elegir uno |
+| Provincia (select) | Obligatorio elegir una |
+| Intereses (checkboxes) | Elegir al menos uno |
+| Condiciones (checkbox) | Obligatorio marcarlo |
 
 ---
 
@@ -55,6 +59,36 @@ Crea un archivo `index.html` con el siguiente contenido:
       <input type="number" id="edad" name="edad" required min="18" max="99" step="1">
     </p>
 
+    <fieldset>
+      <legend>Turno</legend>
+      <label><input type="radio" name="turno" value="manana" required> Mañana</label>
+      <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+    </fieldset>
+
+    <p>
+      <label for="provincia">Provincia:</label>
+      <select id="provincia" name="provincia" required>
+        <option value="">-- Elige una provincia --</option>
+        <option value="araba">Araba</option>
+        <option value="bizkaia">Bizkaia</option>
+        <option value="gipuzkoa">Gipuzkoa</option>
+      </select>
+    </p>
+
+    <fieldset>
+      <legend>Intereses (elige al menos uno)</legend>
+      <label><input type="checkbox" name="intereses" value="frontend"> Front-end</label>
+      <label><input type="checkbox" name="intereses" value="backend"> Back-end</label>
+      <label><input type="checkbox" name="intereses" value="diseno"> Diseño</label>
+    </fieldset>
+
+    <p>
+      <label>
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        Acepto las condiciones de uso
+      </label>
+    </p>
+
     <button type="button" id="comprobar">Comprobar</button>
     <button type="submit">Enviar</button>
   </form>
@@ -64,7 +98,8 @@ Crea un archivo `index.html` con el siguiente contenido:
 
 Fíjate en que:
 
-- Las **condiciones** de cada campo se definen en el propio HTML (`required`, `minlength`, `pattern`, `type="email"`, `min`, `max`, `step`). JavaScript solo se encarga de **comprobarlas y personalizar los mensajes**.
+- Casi todas las **condiciones** se definen en el propio HTML (`required`, `minlength`, `pattern`, `type="email"`, `min`, `max`, `step`). JavaScript se encarga de **comprobarlas y personalizar los mensajes**.
+- La única excepción es el grupo de **intereses**: no lleva `required`, porque *"al menos uno"* no se puede expresar en HTML y lo comprobamos con JavaScript.
 - El formulario lleva `novalidate` para que el navegador no muestre sus mensajes automáticos al enviar.
 - Hay dos botones: **Comprobar** (`type="button"`) solo revisa los datos, mientras que **Enviar** (`type="submit"`) lanza el evento `submit`.
 
@@ -84,6 +119,10 @@ const formulario = document.getElementById("registro");
 const usuario = document.getElementById("usuario");
 const correo = document.getElementById("correo");
 const edad = document.getElementById("edad");
+const radiosTurno = document.querySelectorAll('input[name="turno"]');
+const provincia = document.getElementById("provincia");
+const intereses = document.querySelectorAll('input[name="intereses"]');
+const condiciones = document.getElementById("condiciones");
 const botonComprobar = document.getElementById("comprobar");
 
 // ---------- Validación de cada campo ----------
@@ -124,11 +163,51 @@ const validarEdad = function () {
   }
 };
 
+const validarTurno = function () {
+  // El mensaje se asigna al primer radio del grupo
+  radiosTurno[0].setCustomValidity("");
+
+  if (radiosTurno[0].validity.valueMissing) {
+    radiosTurno[0].setCustomValidity("Elige un turno");
+  }
+};
+
+const validarProvincia = function () {
+  provincia.setCustomValidity("");
+
+  if (provincia.validity.valueMissing) {
+    provincia.setCustomValidity("Selecciona una provincia");
+  }
+};
+
+const validarIntereses = function () {
+  // HTML no puede validar "al menos uno": contamos los marcados
+  const marcados = document.querySelectorAll('input[name="intereses"]:checked');
+
+  if (marcados.length === 0) {
+    intereses[0].setCustomValidity("Elige al menos un interés");
+  } else {
+    intereses[0].setCustomValidity("");
+  }
+};
+
+const validarCondiciones = function () {
+  condiciones.setCustomValidity("");
+
+  if (condiciones.validity.valueMissing) {
+    condiciones.setCustomValidity("Debes aceptar las condiciones para continuar");
+  }
+};
+
 // Valida todos los campos a la vez
 const validarFormulario = function () {
   validarUsuario();
   validarCorreo();
   validarEdad();
+  validarTurno();
+  validarProvincia();
+  validarIntereses();
+  validarCondiciones();
 };
 
 // ---------- Botón "Comprobar" ----------
@@ -158,11 +237,15 @@ const enviar = function (e) {
 botonComprobar.addEventListener("click", comprobar);
 formulario.addEventListener("submit", enviar);
 
-// Revalidamos cada campo mientras se escribe, para que el error
-// desaparezca en cuanto el usuario lo corrige
+// Revalidamos cada campo en cuanto cambia, para que el error
+// desaparezca cuando el usuario lo corrige
 usuario.addEventListener("input", validarUsuario);
 correo.addEventListener("input", validarCorreo);
 edad.addEventListener("input", validarEdad);
+radiosTurno.forEach((radio) => radio.addEventListener("change", validarTurno));
+provincia.addEventListener("change", validarProvincia);
+intereses.forEach((casilla) => casilla.addEventListener("change", validarIntereses));
+condiciones.addEventListener("change", validarCondiciones);
 ```
 
 !!! warning "Valida siempre antes de comprobar"
@@ -185,7 +268,7 @@ edad.addEventListener("input", validarEdad);
 
    | Propiedad | Atributo HTML que la provoca |
    |-----------|------------------------------|
-   | `valueMissing` | `required` |
+   | `valueMissing` | `required` (en un `select`, si está elegida la opción con `value=""`) |
    | `tooShort` | `minlength` |
    | `patternMismatch` | `pattern` |
    | `typeMismatch` | `type="email"` |
@@ -195,9 +278,13 @@ edad.addEventListener("input", validarEdad);
 
    **Tres momentos de validación**
 
-   - Al **escribir** en un campo (`input`): se actualiza su estado sin mostrar mensajes.
+   - Al **escribir** en un campo (`input`) o **cambiar** una opción (`change`): se actualiza su estado sin mostrar mensajes.
    - Al pulsar **Comprobar** (`click`): se validan todos los campos y se muestra el primer error.
    - Al pulsar **Enviar** (`submit`): se validan todos los campos y solo se acepta el formulario si no hay errores.
+
+   **Validaciones que HTML no puede hacer**
+
+   El grupo de intereses no tiene ningún atributo de validación: el error lo pone y lo quita únicamente nuestro `setCustomValidity()`. Es la forma de añadir **reglas propias** a la Constraint Validation API.
 
 ---
 
@@ -207,7 +294,9 @@ edad.addEventListener("input", validarEdad);
 2. Añade un campo **Repetir contraseña** y valida que coincida con el anterior. *Pista: aquí no hay ningún atributo HTML que lo compruebe, así que tendrás que comparar los valores y usar `setCustomValidity()` directamente.*
 3. Modifica el `pattern` del usuario para que también acepte la `ñ` y las vocales con tilde.
 4. Usa las pseudoclases CSS `:valid` e `:invalid` para pintar el borde de cada campo de verde o rojo (repasa el apartado 4.2.3).
-5. **Reto:** organiza el código en **módulos** (apartado 3.4). Mueve las funciones de validación a un archivo `validaciones.js` que las exporte, e impórtalas desde un `main.js` que se encargue de los eventos.
+5. Añade un campo **Fecha de nacimiento** (`type="date"`) que solo admita personas mayores de edad y sustituya al campo Edad (repasa el apartado 4.2.5).
+6. Limita los intereses a un **máximo de dos** casillas marcadas.
+7. **Reto:** organiza el código en **módulos** (apartado 3.4). Mueve las funciones de validación a un archivo `validaciones.js` que las exporte, e impórtalas desde un `main.js` que se encargue de los eventos.
 
 ---
 
