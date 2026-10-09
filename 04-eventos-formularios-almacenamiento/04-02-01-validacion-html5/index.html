@@ -1718,6 +1718,8 @@
       
         
       
+        
+      
     
     
     
@@ -1894,6 +1896,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#que-atributo-sirve-para-cada-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Qué atributo sirve para cada campo?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#validacion-automatica-en-los-navegadores" class="md-nav__link">
     <span class="md-ellipsis">
       📌 Validación automática en los navegadores
@@ -1996,12 +2007,35 @@
   
   
     <li class="md-nav__item">
+      <a href="../04-02-05-validar-otros-campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2.5 Validar otros tipos de campo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../04-02-05-ejemplo-validacion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    📝 4.2.5 Ejemplo completo de validación
+    📝 4.2.6 Ejemplo completo de validación
     
   </span>
   
@@ -2360,6 +2394,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#que-atributo-sirve-para-cada-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 ¿Qué atributo sirve para cada campo?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#validacion-automatica-en-los-navegadores" class="md-nav__link">
     <span class="md-ellipsis">
       📌 Validación automática en los navegadores
@@ -2429,6 +2472,72 @@ Por ejemplo, el siguiente campo solo acepta letras sin acentos ni espacios:</p>
 <p class="admonition-title">Consejo</p>
 <p>El atributo <code>title</code> es muy útil cuando se usa <code>pattern</code>, ya que el mensaje que muestra el navegador tomará el texto del <code>title</code> como pista para el usuario.</p>
 </div>
+<hr />
+<h2 id="que-atributo-sirve-para-cada-campo">📌 ¿Qué atributo sirve para cada campo?</h2>
+<p>No todos los atributos funcionan en todos los tipos de campo. Si pones un atributo en un campo que no lo admite, el navegador simplemente <strong>lo ignora</strong>, sin mostrar ningún error.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th style="text-align: center;"><code>required</code></th>
+<th style="text-align: center;"><code>minlength</code> / <code>maxlength</code></th>
+<th style="text-align: center;"><code>pattern</code></th>
+<th style="text-align: center;"><code>min</code> / <code>max</code> / <code>step</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>text</code>, <code>email</code>, <code>url</code>, <code>tel</code>, <code>password</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>number</code>, <code>range</code></td>
+<td style="text-align: center;">✅ (<code>range</code> no)</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>date</code>, <code>time</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>checkbox</code>, <code>radio</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>file</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>textarea</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>select</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table>
+<p>Veremos cómo validar los checkboxes, radios, desplegables, áreas de texto y fechas en el apartado 4.2.5.</p>
 <hr />
 <h2 id="validacion-automatica-en-los-navegadores">📌 Validación automática en los navegadores</h2>
 <p>Cuando el usuario intenta enviar un formulario con algún campo que no cumple las reglas establecidas, el navegador muestra un mensaje como:</p>
