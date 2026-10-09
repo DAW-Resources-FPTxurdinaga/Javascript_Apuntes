@@ -107,8 +107,8 @@ code .
 
 * [Documentación oficial de JavaScript (MDN)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 * [JavaScript.info (manual completo)](https://javascript.info/)
-* [You Don’t Know JS (serie de libros)](https://github.com/getify/You-Dont-Know-JS)
-* [JavaScript Patterns (por Addy Osmani)](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+* [You Don’t Know JS Yet (serie de libros, 2.ª edición)](https://github.com/getify/You-Dont-Know-JS)
+* [Learning JavaScript Design Patterns (por Addy Osmani)](https://patterns.addy.ie/)
 * [Eloquent JavaScript (por Marijn Haverbeke)](https://eloquentjavascript.net/)
 
 ---
@@ -124,8 +124,7 @@ Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicacion
 ---
 
 <div class="cta-buttons">
-  <a href="/fundamentos/introduccion" class="button primary">Comenzar Curso</a>
-  <a href="/proyecto/ejercicios" class="button secondary">Ver Ejercicios</a>
+  <a href="01-conceptos-basicos/01-00-introduccion/" class="button primary">Comenzar Curso</a>
 </div>
 
 <style>
@@ -158,18 +157,6 @@ Este material ha sido desarrollado para el módulo de **Desarrollo de Aplicacion
   border-color: #e6cb00;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(247, 223, 30, 0.3);
-}
-
-.cta-buttons .secondary {
-  background-color: transparent;
-  color: #2c3e50;
-  border: 2px solid #2c3e50;
-}
-
-.cta-buttons .secondary:hover {
-  background-color: #f8f9fa;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
 }
 
 @media (max-width: 768px) {

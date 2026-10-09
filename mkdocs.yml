@@ -59,6 +59,8 @@ nav:
     - 'Clases':
       - '3.3.1 Clases (I): Clases y objetos. Fundamentos': '03-funciones-arrays-objetos/03-03-01-clases-1.md'
       - '3.3.2 Clases (II): Clases y objetos. Herencia y encapsulación': '03-funciones-arrays-objetos/03-03-02-clases-2.md'
+    - 'Módulos':
+      - '3.4 Módulos ES (import/export)': '03-funciones-arrays-objetos/03-04-modulos.md'
 
   - '4. Eventos, formularios y almacenamiento':
     - '4.1 Eventos': '04-eventos-formularios-almacenamiento/04-01-eventos.md'
